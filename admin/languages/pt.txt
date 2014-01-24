@@ -1,0 +1,138 @@
+Ad added!==Anúncio adicionado!
+Ad code==Código do anúncio
+Add Ads==Juntar os anúncios
+Add Code==Adicionar Código
+Add Downloadable Game==Adicionar Jogo para Download
+Add Embed Code==Adicionar Código Embed
+Add Game To Download Section==Adicionar Jogo aos Seção de Download
+Add Game==Adicionar Jogo
+Add link==Adicionar link
+ADD MEDIA TO YOUR SITE==Adicionar Mídia Ao Seu Site
+Add Media==Adicionar Mídia
+Admin - Cpanel==Admin - Cpanel
+Admin==Admin
+Ads==Anúncios
+Backup Database==Banco de Dados de Backup
+banner exchange==troca da bandeira
+Broken Files==Arquivos quebrados
+Categories==Categorias
+Category==Categoria
+Checked - Yes | Unchecked - No==Verificado - Sim | Desmarcado - Năo
+Clear Cache==Limpar o Cache
+Click here to proceed==Clique aqui para continuar
+Code==Código
+Comments==Comentários
+Cpanel - Ads==Cpanel - Anúncios
+Cpanel - Download Game Section==Cpanel - Download Seção Jogo
+Cpanel - Insert Code==Cpanel - Inserir o Código
+Cpanel - Links Exchange==Cpanel - Troca de Links
+Cpanel - Media==Cpanel - Mídia
+Cpanel - Upload Game==Cpanel - Upload de Jogo
+Create Feed==Criar Alimente
+Database Error!==Erro de banco de dados!
+Description==Descrição
+Do not forget to create, upload, and add a thumbnail image!==Não se esqueça de criar, fazer upload, e adicionar uma imagem em miniatura!
+Downloadable==Carregável
+Edit News==Editar Notícias
+Email==Email
+Embed Code successfully added!==Código Embed adicionado com sucesso!
+Error updating game database!==Erro ao atualizar banco de dados do jogo!
+FGD Feed Games==FGD Feed Jogos
+FGD Games==FGD Jogos
+File or thumbnail type not supported==Arquivo ou miniaturas tipo não suportado
+File path==Caminho do arquivo
+File==Arquivo
+Files uploaded succesfully!==Arquivos enviados com sucesso!
+FOG Feed Games==FOG Feed Jogos
+FOG Games==FOG Jogos
+For SEO URLs. If you select yes, your server must support mod rewrite. (most do)==Para SEO URLs. Se você selecionar Sim, o servidor deve suportar mod reescrever. (maioria vai)
+For Youtube videos, enter the address==Para ver os vídeos do Youtube, digite o endereço
+Game description==Descrição do jogo
+Game Feeds==Jogo Feeds
+Game File Type==Jogo tipo de arquivo
+Game File==Jogo Arquivo
+Game successfully added!==Jogo adicionado com sucesso!
+Games==Jogos
+Generate a game sitemap by clicking on the link. When sitemap is created it will show you link of the sitemap.xml file.==
+Google Analytics Data==De dados do Google Analytics
+Google Analytics Login Info==Google Analytics Informações de Login
+Google Analytics==Google Analytics
+Height/Width not used for videos.==Altura / largura não utilizado para os vídeos.
+Height==Altura
+Here will show you the list of downloadable games that you have uploaded. Which you can also delete at any given time.==Aqui irá mostrar-lhe a lista de jogos para download que você enviou. Que você também pode excluir a qualquer momento.
+Home==Início
+in the File path.==no caminho do arquivo.
+Instructions==instruções
+Interaction==interação
+Keywords==Palavras-chave
+Kongregate Feed Games==Kongregate Feed Jogos
+Kongregate Games==Kongregate Jogos
+Link added!==Link adicionado!
+Link to the Mochi version of the game==Link para a versão Mochi do jogo
+Links==Ligações
+Logout==Logout
+Main==Principal
+Manage Ads==Gerenciar Anúncios
+Manage Downloadables==Gerenciar Jogos para Download
+Manage Forum Cats==Gerenciar Cats do Fórum
+Manage Forum Posts==Gerenciar Posts do Fórum
+Manage Forum Topics==Gerenciar tópicos do Fórum
+Manage GameQueue==Gerenciar FilaJogo
+Manage Games==Gerir Jogos
+Manage Logs==Gerenciar os Logs
+Media successfully added!==Mídia adicionado com sucesso!
+Members Comments==Membros Comentários
+Members==Membros
+Mochi Feed Games==Mochi Feed Jogos
+Mochi Games==Mochi Jogos
+Mod Rewrite==Mod Rewrite
+Name of the game==Nome do jogo
+Name==Nome
+News Blog Comments==Notícias Comentários Blog
+News Blog RSS Feed==Notícias Blog Feed RSS
+News==Notícias
+No file or thumbnail detected==Nenhum arquivo ou miniatura detectado
+notify==notificar
+Optional for==Opcional para
+Other==Outros
+Plays Today==Jogadas hoje
+Playtomic Feed Games==Playtomic Feed Jogos
+Playtomic Games==Playtomic Jogos
+Reciprocal==Recíproco
+Required for==Necessário para
+Return Code==Código de retorno
+RSS Feed==RSS Feed
+Scheduled Jobs==Trabalhos Agendados
+Select Game file==Selecione o arquivo do jogo
+Select Game thumbnail==Selecione miniaturas de jogo
+Send notification to the subscribed emails about the new game==Enviar uma notificação para os e-mails assinados sobre o novo game
+Settings==Configurações
+Sitemap==Mapa do Site
+Socal==Social
+Social App IDs==Aplicativo Sociais IDs
+Submit==Emitir
+Thumbnail path==Miniaturas caminho
+Thumbnail==Miniaturas
+Title==Título
+To change the embedded codes, look in the media folder.==Para alterar os códigos embutidos, procure na pasta de mídia.
+Total Games==Jogos Totais
+Total Plays== Jogadas Totais
+Unapproved links==Ligações não autorizadas
+Update Mochi ID==Atualize Mochi ID
+Upload A Game==Carregar um jogo
+Upload Games==Enviar Jogos
+Uploading==Upload
+Url==Url
+Users==Uuários
+Vasco Feed Games==Vasco Feed Jogos
+Vasco Games==Vasco Jogos
+Version==Versão
+Webmaster resources==Recursos de Webmaster
+when uploading, the dimensions are detected. Enter the values if you want to set your own.==ao fazer o upload, as dimensões são detectados. Digite os valores se você quiser definir o seu próprio.
+Width==Largura
+You must include a game file.==Você deve incluir um arquivo do jogo.
+You must include a game pic.==Você deve incluir um pic jogo.
+Your game was sent to the subscribed emails too.==Seu jogo foi enviado para os e-mails assinados também.
+Youtube videos automatically get title, description, keywords and thumbnail from Youtube API. Just put the video url in the 'File path' box, choose category and 'File' drop menu 'youtube' and click 'Add Media'.==Vídeos do Youtube automaticamente obter o título, descrição, palavras-chave e miniaturas de API Youtube. Basta colocar a URL do vídeo na caixa 'caminho do arquivo', escolha a categoria e 'Arquivo' menu drop 'youtube' e clique em "Adicionar Mídia".
+Zip failed==Zip falhou
+Zipped successfully==Zipado com sucesso

@@ -1,0 +1,220 @@
+Ad added!
+Ad code
+Add Ads
+Add Code
+Add Downloadable Game
+Add Embed Code
+Add Game To Download Section
+Add Game
+Add link
+ADD MEDIA TO YOUR SITE
+Add Media
+Admin - Cpanel
+Admin
+Ads
+Backup Database
+banner exchange
+Broken Files
+Categories
+Category
+Checked - Yes | Unchecked - No
+Clear Cache
+Click here to proceed
+Code
+Comments
+Cpanel - Ads
+Cpanel - Download Game Section
+Cpanel - Insert Code
+Cpanel - Links Exchange
+Cpanel - Media
+Cpanel - Upload Game
+Create Feed
+Database Error!
+Description
+Do not forget to create, upload, and add a thumbnail image!
+Downloadable
+Edit News
+Email
+Embed Code successfully added!
+Error updating game database!
+FGD Feed Games
+FGD Games
+File or thumbnail type not supported
+File path
+File
+Files uploaded succesfully!
+FOG Feed Games
+FOG Games
+For SEO URLs. If you select yes, your server must support mod rewrite. (most do)
+For Youtube videos, enter the address
+Game description
+Game Feeds
+Game File
+Game successfully added!
+Games
+Generate a game sitemap by clicking on the link. When sitemap is created it will show you link of the sitemap.xml file.
+Google Analytics Data
+Google Analytics Login Info
+Google Analytics
+Height/Width not used for videos.
+Height
+Here will show you the list of downloadable games that you have uploaded. Which you can also delete at any given time.
+Home
+in the File path.
+Instructions
+Interaction
+Keywords
+Kongregate Feed Games
+Kongregate Games
+Link added!
+Link to the Mochi version of the game
+Links
+Logout
+Main
+Manage Ads
+Manage Downloadables
+Manage Forum Cats
+Manage Forum Posts
+Manage Forum Topics
+Manage GameQueue
+Manage Games
+Manage Logs
+Media successfully added!
+Members Comments
+Members
+Mochi Feed Games
+Mochi Games
+Mod Rewrite
+Name of the game
+Name
+News Blog Comments
+News Blog RSS Feed
+News
+No file or thumbnail detected
+notify
+Optional for
+Other
+Plays Today
+Playtomic Feed Games
+Playtomic Games
+Reciprocal
+Required for
+Return Code
+RSS Feed
+Scheduled Jobs
+Select Game file
+Select Game thumbnail
+Send notification to the subscribed emails about the new game
+Settings
+Sitemap
+Socal
+Social App IDs
+Submit
+Thumbnail path
+Thumbnail
+Title
+To change the embedded codes, look in the media folder.
+Total Games
+Total Plays
+Unapproved links
+Update Mochi ID
+Upload A Game
+Upload Games
+Uploading
+Url
+Users
+Vasco Feed Games
+Vasco Games
+Version
+Webmaster resources
+when uploading, the dimensions are detected. Enter the values if you want to set your own.
+Width
+You must include a game file.
+You must include a game pic.
+Your game was sent to the subscribed emails too.
+Youtube videos automatically get title, description, keywords and thumbnail from Youtube API. Just put the video url in the 'File path' box, choose category and 'File' drop menu 'youtube' and click 'Add Media'.
+Zip failed
+Zipped successfully
+///////////
+Edit News
+Admin - Cpanel
+Categories
+Home
+Links
+Settings
+Users
+News
+Other
+Add link
+Links
+Manage Ads
+Add Ads
+Comments
+Members Comments
+News Blog Comments
+Create Feed
+Sitemap
+RSS Feed
+News Blog RSS Feed
+Games
+Add Media
+Add Code
+Manage Games
+Upload Games
+Broken Files
+Game Feeds
+Update Mochi ID
+//settings
+Cpanel - Settings
+Add News
+Categories
+Links
+General Site Settings
+GENERAL SETTINGS
+Version
+Unapproved links
+Comments
+Total Games
+Total Plays
+Plays today
+Members
+Template
+Skin
+Anti-Spam
+Page Cache Life
+Use Captcha System?
+in seconds(300 = 5 minutes)
+GAME SETTINGS
+Lightbox Game play
+Depends on availability in template
+Games per category
+Games sort
+newest
+popular
+random
+Games per page
+(also for category pages)
+OTHER
+Disable Site
+yes
+no
+Auto Approve Exchange links
+Exchange Links on Home page
+SEO Friendly URLs
+UPDATE
+Email
+Site name
+Slogan
+Meta Description(Seen in search engines)
+Meta Keywords
+Admin password
+New Pass
+Re-enter
+Re-enter Pass
+Update Settings
+One or more fields that were required were left empty.
+Click here to go back.
+Files per page must be a number.
+Site settings updated!
+Click here to proceed.
+Passwords did not match!

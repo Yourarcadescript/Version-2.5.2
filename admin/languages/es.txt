@@ -1,0 +1,472 @@
+﻿//general.php
+Edit News==Editar noticias
+Admin - Cpanel==Admin - Cpanel
+Categories==CategorÃ­as
+Links==Enlaces
+Home==PÃ¡gina de inicio
+Settings==ConfiguraciÃ³n
+Users==Usuarios
+News==Noticias
+Other==Otros
+Add link==AÃ±adir enlace
+Add Link==AÃ±adir enlace
+Manage Ads==Administrar anuncios
+Add Ads==AÃ±adir anuncios
+Comments==Comentarios
+Members Comments==Comentarios de los miembros
+News Blog Comments==Blog de noticias comentarios
+Create Feed==Crear Feed
+Sitemap==Mapa del sitio
+RSS Feed==Feed RSS
+News Blog RSS Feed==Blog de noticias RSS
+Games==Juegos
+Add Media==AÃ±adir los medios de comunicaciÃ³n
+Add Code==Agregue el cÃ³digo
+Manage Games==Administrar juegos
+Upload Games==Subir juegos
+Broken Files==Archivos rotos
+Game Feeds==Juegos Feeds
+Update Mochi ID==ActualizaciÃ³n Mochi ID
+Mochi Games==Mochi juegos
+FGD Games==Juegos de FGD
+FOG Games==Juegos de niebla
+Playtomic Games==Juegos de Playtomic
+Kongregate Games==Juegos de Kongregate
+Vasco Games==Juegos de Vasco
+AGF Games==AGF juegos
+
+//settings.php
+General Site Settings==Configuración del sitio Generales
+General Settings==Configuración general
+ADD NEWS==Añadir Noticias
+Cpanel - Settings==Cpanel - Configuración
+Click here to proceed==Haga clic aquí para continuar
+Site settings updated==Configuración del sitio actualizada!
+Template==plantilla 
+Members==Miembros
+Plays Today==juega hoy
+Total Plays==total de reproducciones
+Total Games==total de juegos
+
+Unapproved Links==Enlaces no aprobados
+Version==versión
+Skin==piel
+Anti-Spam==Anti-Spam
+Use captcha System ?==Utilice Sistema captcha?
+Minimum Time to fill Reg Form==Tiempo mínimo para llenar el Formulario Reg
+in seconds (300 = 5 minutes) Enter 0 to disable==en segundos (300 = 5 minutos) Introduzca 0 para desactivar
+Message to spammers==Mensaje a los spammers
+This will be displayed if someone fills form before minimum time.==Esto se mostrará si alguien rellena formulario antes de tiempo mínimo.
+in seconds (300 = 5 minutes)==en segundos (300 = 5 minutos)
+Page Cache Life==Página caché Vida
+Game Settings==Ajustes de juego
+Lightbox Game play==Juego Lightbox Juego
+Depends on availability in template==Depende de la disponibilidad en la plantilla
+yes==si
+no==no
+Games per category==Juegos por categoría
+Games sort==Juegos especie
+popular==popular
+newest==el más nuevo
+random==azar
+Games per page==Juegos por página
+(also for category pages)==(también para las páginas de categorías)
+Other==otro
+Disable Site==Desactivar Site
+Chat Disabled==Chatea discapacitados
+Register Closed==Regístrese Cerrado
+Auto Approve Exchange links==Auto Aprobar Intercambio de enlaces
+Exchange Links on Home page==Tipo de Enlaces en la página Inicio
+SEO Friendly URLs==URLs SEO friendly
+Update==actualización
+Email==Email
+Site name==nombre del sitio
+Slogan==eslogan
+Meta Description (Seen in search engines)==Descripción Meta (Visto en los motores de búsqueda) 
+Meta Keywords==palabras clave Meta
+Admin password==contraseña de administrador
+New Pass==Nueva Pass
+Re-enter==Volver a entrar en
+Re-enter Pass==Volver a introducir la Pass
+Update Settings==Configuración de la Actualización
+Site settings updated!==Configuración del sitio actualizada!
+Files per page must be a number.==Archivos por página debe ser un número.
+
+
+//add_ads.php
+Cpanel - Ads==Cpanel - Anuncios
+Name==nombre
+Ad Code==Código de anuncio
+Submit==presentar
+Ads==Anuncios
+
+//add_code.php
+Cpanel - Insert Code==CPanel - introducir codigo
+Add Embed Code==Añadir Insertar Código
+Add Code==Agregar código
+Title==título
+Description==descripción
+Category==categoría
+Code==código
+Thumbnail==uña del pulgar
+Add Code!==Agregar código!
+
+//add_down_game.php
+Cpanel - Download Game Section==Cpanel - Sección Descarga del juego
+Name of the game:==Nombre del juego:
+Game description:==Descripcion del juego:
+Keywords:==Palabras clave:
+Select Game thumbnail:==Seleccione el archivo del juego:
+Select Game file:==Seleccione el archivo del juego:
+*Link to the Mochi version of the game:==* Enlace a la versión Mochi del juego:
+Send notification to the subscribed emails about the new game:==Envíe la notificación a los correos electrónicos suscritos sobre el nuevo juego:
+Checked = Yes | Unchecked = No==Seleccionado = Sí | deseleccionado = No
+Add Game To Download Section==Añadir Juego a Sección de descarga
+Zipped successfully==cremallera con éxito
+
+//add_game.php
+Cpanel - Upload Games==Cpanel - Subir Juegos
+Add Game==Añadir Juego
+Upload A Game==Cargar un juego
+Instructions==instrucciones
+Keywords==Palabras clave
+Game File Type==Tipo de juego Archivo
+Game File==Juego del archivo
+Height:*==Altura: *
+Width:*==Ancho: *
+
+//add_link.php
+Cpanel - Links Exchange==Cpanel - Intercambio de links
+Url==Url
+Reciprocal==recíproco
+
+//add_media.php
+*Youtube videos automatically get title description keywords and thumbnail from Youtube API. Just put the video url in the File path box choose category and File drop menu youtube and click Add Media.==* Youtube videos automáticamente obtienen descripción del título las palabras clave y miniaturas de API de Youtube. Sólo hay que poner la URL del video en el cuadro Ruta de archivo seleccione la categoría y el Archivo menú desplegable youtube y haga clic en Agregar Media.
+File==del archivo
+File path==ruta del archivo
+Thumbnail path==ruta Miniatura
+Cpanel - Media==Cpanel - Medios de comunicación
+
+//add_news.php
+Cpanel - News==Cpanel - Noticias
+News Blog Comments==Noticias Comentarios Blog
+Manage News==Gestione Noticias
+Edit - News==Editar - Noticias
+Date==fecha
+Topic==tema
+News item==noticias artículo
+Edit==editar
+Delete==borrar
+News==noticias
+Add News Entry==Añadir Noticias de Entrada
+
+//broken_files.php
+Cpanel - Broken Files==Cpanel - Archivos Roto
+Check Broken Files==Compruebe Archivos Roto
+The IDs below have broken thumbnails.==Los IDs de abajo tienen miniaturas rotas.
+The IDs below have broken games.==Los IDs de abajo tienen juegos rotos.
+
+//cache.php
+Cpanel - Manage Site Cache==Cpanel - Administrar caché de sitio 
+Clear Cache==Borrar la caché
+Clear Page Cache==Borrar caché Página
+Clear Image Cache==Borrar la caché de imagen
+
+//footer.php
+YourArcadeScript.com==SuArcadeGuión.com
+Support Forum==Apoyo Foro
+
+//gainfo.php
+Login (email)==Usuario (e-mail)
+New Password==Nueva contraseña
+Profile Name==Perfil Nombre
+
+//id_mochigames.php
+Cpanel - Mochiads Publisher ID==Mochiads Editorial ID
+Setup==disposición
+You need a MochiAds Publisher ID to upload Mochi games through this menu.  If you need one you can get one here:==Usted necesita un MochiAds Editorial ID para cargar juegos Mochi través de este menú. Si usted necesita uno, usted puede conseguir uno aquí:
+After you have made the account enter your Publisher and Secret IDs below.==Después de haber hecho la cuenta, introduzca su ID de publicador y los secretos de abajo.
+Free MochiAds Publisher Signup==Gratis MochiAds Editor de registro 
+Update your MochiAds Publisher ID if necessary:==Modificar una MochiAds Editorial ID si es necesario:
+Mochiads Publisher ID==Mochiads Editorial ID
+Publisher ID==ID de editor
+Secret Key==clave secreta
+* The Publisher ID and Publisher Secret Key while logged into Mochimedia can be found ==* El ID de Editor and Publisher clave secreta mientras estés conectado a Mochimedia se pueden encontrar 
+ here== aquí
+. If your Publisher ID is wrong, the feed will download but will be empty.==. Si su ID de publicador es incorrecta, la alimentación se descarga pero estará vacía.
+
+//login.php
+Please login to access the admin area.==Inicia sesión para acceder al área de administración.
+Admin Password:==Contraseña de administrador:
+
+//manage_ads.php
+Code for placement==Código para la colocación
+
+//manage_category.php
+Cpanel - Categories==Cpanel - Categorías
+ADD GAME==Añadir juego
+Manage Categories==Gestionar Categorías
+Name:==Nombre:
+ID==ID
+Active==Activo
+Order==Orden
+Parent==de Padres
+Sub Cat of (id)==Sub Cat de (id)
+Show on home page==Mostrar en página de inicio
+Meta description==Meta descripción
+Display Order==Orden de visualización
+Parent category==categoría padre
+If not parent,id of the parent category==Si no es el padre, id de la categoría padre
+Active:==Activo:
+
+//manage_comments.php
+Cpanel - Game Comments==Cpanel - Juego Comentarios
+Manage Comments==Gestionar Comentarios
+Game ID==ID del juego
+Comment==comentario
+Ip Address==Dirección IP
+
+//manage_db_backup.php
+Cpanel - Database Backup==Cpanel - Copia de seguridad de base de datos
+Backup Arcade Database==Copia de seguridad de base de datos Arcada
+Google Analytics Info==Google Analítica Información del
+Google Analytics Login Info==Google Analytics Entrar Info
+Create a database backup==Crear una copia de seguridad de base de datos
+
+//manage_down_down.php
+Cpanel - Downloadable Games==Cpanel - Juegos para descargar
+Thumb==del pulgar
+Game Title==Título del juego
+Down==de Down
+D.Mochi==D.Mochi
+Edit - ==Editar - 
+
+//manage_forumcats.php
+Manage Forum Categories==Gestione Foro de Categorías
+Cpanel - Forum Categories==Cpanel - Foro de Categorías
+Edit - Category==Editar - Categoría
+
+//manage_ga.php
+Logging into Google Analytics server failed.==Inicio de sesión en servidor de Google Analítica no.
+Make sure your login info is correct and try again.==Asegúrese que su Acceder Info es correcta e intente de nuevo.
+
+//manage_games.php
+Cpanel - Games==Cpanel - Juegos
+Manage Games==Gestione Juegos
+Game Review==Comentarios del juego
+code==código
+Game Width==Ancho del juego
+Game Height==Juego Altura
+Game Filter Search==Filtro de Búsqueda Juego
+Category:==Categoría:
+Game Plays==Partidas Jugadas
+Featured==destacados
+Game plays==del juego juega
+Search Results==Resultados de la búsqueda
+Exact Search==Búsqueda exacta
+Game==del juego
+More==Más.
+Plays==Reproduce
+
+//manage_jobs.php
+Manage Scheduled Jobs==Gestione programadas Empleos
+Clear Daily Game Plays==Claro del juego Diarios Reproduce
+Update RSS Feeds==Actualice RSS Feeds
+Optimize database==Optimizar la base de datos
+Update Sitemap==Actualice Mapa del sitio
+GameQue Installs==GameQue Se instala
+Create database backup==Crea base de datos de reserva
+Job==de empleo
+Enabled==Habilitado
+Schedule==horario
+Run Job Now==Ejecutar de empleo ahora
+
+//manage_kongregate.php
+Install Kongregate.com Feed Games==Instale Kongregate.com RSS Juegos
+Install==Instale
+Note: Installing a lot of games at once is resource intensive.==Nota: La instalación de una montón de juegos a la vez está intensivo en recursos.
+
+//manage_links.php
+Manage links==Gestionar los enlaces
+Cpanel - links==Cpanel - Enlaces
+Add Links==Añadir enlaces
+ADD LINK==Añadir enlace
+Edit - Link==Editar - Enlace
+In==En
+Out==Fuera
+Site description==Descripción del sitio
+Approved==Aprobada
+Site Title==Título del sitio
+Site URL==URL del sitio
+
+//manage_logs.php
+Log Files==Archivos Log
+Arcade Database Errors==Arcada Database Errores
+Scheduled Jobs Log==Trabajos programados Conectarse
+Admin Database Errors==Admin base de datos Errores
+View Log file==Vista archivo de registro
+
+//manage_membercomment.php
+Cpanel - Members Comments==Cpanel - Miembros Comentarios
+Edit - Comment==Editar - Comentario
+Manage Members Comments==Gestionar Miembros Comentarios
+User ID==ID de usuario
+
+//manage_mochi.php
+Install Mochimedia.com Feed Games==Instale Mochimedia.com Juegos Feed
+Rating==Valoración de
+
+//manage_posts.php
+Cpanel - Forum Posts==Cpanel - Mensajes en los foros
+Message==mensaje
+Topic ID==ID de tema
+User==del usuario
+
+//manage_topics.php
+Cpanel - Forum Topics==Cpanel - Temas del foro
+Author==autor
+Views==Vistas
+
+//manage_users.php
+Cpanel - Users==Cpanel - Usuarios
+Manage Users==Gestionar Usuarios
+Username==Nombre usuario
+Date Joined==Fecha de ingreso
+Banned==Vetado
+Date joined==Fecha de ingreso
+Email==Correo electrónico
+Edit Member==Editar miembros
+Website==sitio web
+Ban for x days==Prohibición durante x días
+
+//manage_vascogames.php
+Install Vascogames.com Feed Games==Instale Vascogames.com Juegos Feed
+
+//manageagffeed.php
+Install ArcadeGameFeed.com - Game Feed for Your Arcade!==Instale ArcadeGameFeed.com - Juego de Arcade para su alimentación
+
+//managefgdfeed.php
+Install FlashGameDistribution.com Games==Instale FlashGameDistribution.com Juegos!
+Note: Installing many games at once is resource intensive.==Nota: La instalación de muchos juegos a la vez es intensivo en recursos.
+Featured Games==Juegos destacados
+Multiplayer==Multijugador
+Highscores==Altos Puntajes
+Mobile Ready==móvil de Listo
+No Pregame Ads==No hay Pregame Anuncios
+
+
+//managefogfeed.php
+Install FreeGamesForYourWebsite.com Feed Games==Instalar Juegos FreeGamesForYourWebsite.com Alimente
+Feed is not installed.==RSS no está instalado.
+
+//managegamequeue.php
+Your GameQueue is empty==Tu GameQueue está vacía
+Load your GameQueue with games from the feed management pages.==Cargue tu GameQueue con los juegos desde las páginas de gestión piensos.
+Source Feed==Fuente RSS
+
+//newsblogcomments.php
+Cpanel - Blog Comments==Cpanel - Comentarios Blog
+Manage News Blog Comments==Gestionar Noticias Comentarios Blog
+One or more fields was left empty.==Uno o más campos fue dejan vacíos.
+Click here to go back==Haga clic aquí para volver
+Comment Successfully edited!==Comentario editada con éxito!
+You cannot edit a members comment that doesnt exist.==No puede editar un comentario miembros que no existe.
+Edit - Comment==Editar - Comentario
+You cannot delete a members comment that does not exist!==No se puede borrar un comentario miembros que no existe!
+Members comment successfully deleted.==Miembros Comentario eliminado con éxito.
+You cannot delete this news comment that does not exist!==No se puede eliminar este comentario de noticias que no existe!
+No members comments in the database!==No hay comentarios de los miembros en la base de datos!
+News ID==Noticias ID
+
+//left_column/comments.php
+Interaction==InteracciÃ³n
+Comments==Comentarios
+Members Comments==Comentarios de los miembros
+Manage Shouts==Gestionar Shouts
+News Blog Comments==Blog de noticias comentarios
+Manage Forum Topics==Gestionar foro Temas
+Manage Forum Posts==Gestionar Mensajes en los foros
+Manage Forum Cats==Gestionar Gatos Foro
+
+//left_column/ga.php
+Google Analytics==Google Analytics
+Google Analytics Data==Datos de Google Analytics
+Google Analytics Login Info==Informacion de Login de Google Analytics
+
+//left_column/social.php
+Social==Social
+Social App IDs for Login==Social App ID de inicio de sesiÃ³n
+Social App IDs==Identificadores de aplicaciÃ³n social
+
+//left_column/mochi.php
+Arcade Game Feed==Feed juego Arcade
+AGF Game Feed==AGF juego Feed
+Feeds==Se alimenta
+Mochi Feed Games==Feed de mochi juegos
+Install Mochi Games==Instalar juegos Mochi
+FOG Feed Games==NIEBLA de alimentaciÃ³n juegos
+FOG Feed==Feed de niebla
+FGD Feed==FGD Feed
+FGD Feed Games==FGD alimentaciÃ³n juegos
+Playtomic Feed==Playtomic Feed
+Playtomic Feed Games==Juegos de Playtomic Feed
+Vascogames Feed==Vascogames Feed
+Vascogames Feed Games==Juegos de Vascogames Feed
+Kongregate Feed==Feed de Kongregate
+Kongregate Feed Games==Juegos de Kongregate Feed
+
+//left_column/links.php
+Main==Principal
+Home==PÃ¡gina de inicio
+Settings==ConfiguraciÃ³n
+Categories==CategorÃ­as
+Links==Enlaces
+Clear Cache==Limpiar cachÃ©
+Scheduled Jobs==Tareas programadas
+Manage Logs==Gestionar los registros
+Manage Ads==Gestionar anuncios
+Add Ads==AÃ±adir anuncios
+Backup Database==Base de datos de copia de seguridad
+Logout==Salir
+
+//left_column/games.php
+Add Code==Agregue el cÃ³digo
+Add Media==AÃ±adir los medios de comunicaciÃ³n
+Manage Games==Gestione juegos
+Manage GameQueue==Gestionar GameQueue
+Broken Files==Archivos rotos
+Upload Games==Subir juegos
+Manage Downloadables==Gestionar descargas
+Manage Downloadable Games==Gestionar juegos descargables
+Add Downloadable Game==AÃ±adir juego descargable
+
+//right_column/stats.php
+Unapproved links==enlaces no aprobados
+Plays today==juega hoy
+
+//right_column/sitemap.php
+Generate a game sitemap by clicking on the link.When sitemap is created it will show you link of the sitemap.xml file.==Generar un mapa de sitio del juego haciendo clic en el mapa del sitio link.When se crea que le mostrará el vínculo del archivo sitemap.xml.
+
+//right_column/modrewrite.php
+Mod rewrite==reescritura de la MOD
+For SEO URLs. If you select yes, your server must support mod rewrite. (most do)==Para URLs SEO. Si selecciona Sí, el servidor debe soportar reescritura mod. (la mayoría lo hace)
+
+//right_column/media.php
+Height/Width not used for videos.==Altura / anchura no se utiliza para los vídeos.
+To change the embedded codes, look in the media folder.==Para cambiar los códigos incrustados, busque en la carpeta multimedia.
+For youtube videos, enter the address (i.e. ==Para los vídeos de YouTube, escriba la dirección (es decir,
+http://www.youtube.com/watch?v=aRn5-LQCg2s )in the File path.==http://www.youtube.com/watch?v=aRn5-LQCg2s) en la ruta de acceso del archivo.
+Do not forget to create, upload, and add a thumbnail image!==No se olvide de crear, cargar, y agregar una imagen en miniatura!
+
+//right_column/managedowngame.php
+Downloadable==Desgargable
+Here will show you the list of downloadable games that you have uploaded.Which you can also delete at any given time.==Aquí le mostrará la lista de juegos descargables que tienes uploaded.Which también puede eliminar en cualquier momento dado.
+
+//right_column/file.php
+Uploading==Subiendo
+Optional for==Opcional para
+when uploading the dimensions are detected. Enter the values if you want to set your own.==al subir se detectan las dimensiones. Introduzca los valores si desea configurar su cuenta.
+Required for==Se requiere para
+
+//right_column/code.php
+Do not forget to create, upload, and add a thumbnail image!==No se olvide de crear, cargar, y agregar una imagen en miniatura!

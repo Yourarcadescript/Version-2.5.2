@@ -1,0 +1,658 @@
+Ad added!
+==Anuncio añadido!
+
+Ad code
+==Código de anuncio
+
+Add Ads
+==Añadir anuncios
+
+Add Code
+==Agregue el código
+
+Add Downloadable Game
+==Añadir juego descargable
+
+Add Embed Code
+==Añadir incrustar código
+
+Add Game To Download Section
+==Añadir el juego a la sección de descargas
+
+Add Game
+==Añadir juego
+
+Add link
+==Añadir enlace
+
+ADD MEDIA TO YOUR SITE
+==AÑADIR LOS MEDIOS DE COMUNICACIÓN A SU SITIO
+
+Add Media
+==Añadir los medios de comunicación
+
+Admin - Cpanel
+==Admin - Cpanel
+
+Admin
+==Admin
+
+Ads
+==Anuncios
+
+Backup Database
+==Base de datos de copia de seguridad
+
+banner exchange
+==intercambio de Banner
+
+Broken Files
+==Archivos rotos
+
+Categories
+==Categorías
+
+Category
+==Categoría
+
+Checked - Yes | Unchecked - No
+==Revisado - Sí | Desenfrenado - No
+
+Clear Cache
+==Limpiar caché
+
+Click here to proceed
+==Haz clic aquí para continuar
+
+Code
+==Código
+
+Comments
+==Comentarios
+
+Cpanel - Ads
+==CPanel - anuncios
+
+Cpanel - Download Game Section
+==CPanel - sección de descarga de juego
+
+Cpanel - Insert Code
+==CPanel - introducir codigo
+
+Cpanel - Links Exchange
+==CPanel - intercambio de Links
+
+Cpanel - Media
+==CPanel - medios
+
+Cpanel - Upload Game
+==CPanel - cargar juego
+
+Create Feed
+==Crear Feed
+
+Database Error!
+==Error de base de datos.
+
+Description
+==Descripción
+
+Do not forget to create, upload, and add a thumbnail image!
+==No olvide crear, cargar y agregar una imagen en miniatura.
+
+Downloadable
+==Descargables
+
+Edit News
+==Editar noticias
+
+Email
+==Correo electrónico
+
+Embed Code successfully added!
+==Incrustar código agregado exitosamente!
+
+Error updating game database!
+==Base de datos error actualización juego de!
+
+FGD Feed Games
+==FGD alimentación juegos
+
+FGD Games
+==Juegos de FGD
+
+File or thumbnail type not supported
+==Archivo o miniatura tipo no compatible
+
+File path
+==Ruta del archivo
+
+File
+==Archivo
+
+Files uploaded succesfully!
+==Los archivos subidos con éxito!
+
+FOG Feed Games
+==NIEBLA de alimentación juegos
+
+FOG Games
+==Juegos de niebla
+
+For SEO URLs. If you select yes, your server must support mod rewrite. (most do)
+==Para SEO URLs. Si selecciona Sí, tu servidor debe admitir reescritura mod. (ver más)
+
+For Youtube videos, enter the address
+==Para videos de Youtube, introduzca la dirección
+
+Game description
+==Descripción del juego
+
+Game Feeds
+==Juegos Feeds
+
+Game File
+==Archivo del juego
+
+Game successfully added!
+==Juego añadido con éxito!
+
+Games
+==Juegos
+
+Generate a game sitemap by clicking on the link. When sitemap is created it will show you link of the sitemap.xml file.
+==Generar un sitemap juego haciendo clic en el enlace. Cuando se crea el mapa del sitio mostrará que enlace del archivo sitemap.xml.
+
+Google Analytics Data
+==Datos de Google Analytics
+
+Google Analytics Login Info
+==Informacion de Login de Google Analytics
+
+Google Analytics
+==Google Analytics
+
+Height/Width not used for videos.
+==Altura/anchura no utilizado para los vídeos.
+
+Height
+==Altura
+
+Here will show you the list of downloadable games that you have uploaded. Which you can also delete at any given time.
+==Aquí le mostrará la lista de juegos descargables que haya subido. Que también puede eliminar en cualquier momento dado.
+
+Home
+==Página de inicio
+
+in the File path.
+==en la ruta del archivo.
+
+Instructions
+==Instrucciones
+
+Interaction
+==Interacción
+
+Keywords
+==Palabras clave
+
+Kongregate Feed Games
+==Juegos de Kongregate Feed
+
+Kongregate Games
+==Juegos de Kongregate
+
+Link added!
+==Enlace añadido!
+
+Link to the Mochi version of the game
+==Enlace a la versión del juego de Mochi
+
+Links
+==Enlaces
+
+Logout
+==Logout
+
+Main
+==Principal
+
+Manage Ads
+==Administrar anuncios
+
+Manage Downloadables
+==Administrar descargas
+
+Manage Forum Cats
+==Administrar Foro gatos
+
+Manage Forum Posts
+==Administrar mensajes Foro
+
+Manage Forum Topics
+==Administrar temas en el foro
+
+Manage GameQueue
+==Gestionar GameQueue
+
+Manage Games
+==Administrar juegos
+
+Manage Logs
+==Administrar los registros
+
+Media successfully added!
+==Los medios de comunicación han agregado correctamente!
+
+Members Comments
+==Comentarios de los miembros
+
+Members
+==Miembros
+
+Mochi Feed Games
+==Feed de mochi juegos
+
+Mochi Games
+==Mochi juegos
+
+Mod Rewrite
+==Mod Rewrite
+
+Name of the game
+==Nombre del juego
+
+Name
+==Nombre
+
+News Blog Comments
+==Blog de noticias comentarios
+
+News Blog RSS Feed
+==Blog de noticias RSS
+
+News
+==Noticias
+
+No file or thumbnail detected
+==Ningún archivo o miniatura detectado
+
+notify
+==notificar
+
+Optional for
+==Opcional para
+
+Other
+==Otros
+
+Plays Today
+==Juega hoy
+
+Playtomic Feed Games
+==Juegos de Playtomic Feed
+
+Playtomic Games
+==Juegos de Playtomic
+
+Reciprocal
+==Recíproco
+
+Required for
+==Requerido para
+
+Return Code
+==Código de retorno
+
+RSS Feed
+==Feed RSS
+
+Scheduled Jobs
+==Tareas programadas
+
+Select Game file
+==Seleccione el archivo del juego
+
+Select Game thumbnail
+==Seleccione juego miniatura
+
+Send notification to the subscribed emails about the new game
+==Enviar una notificación a los correos electrónicos suscritos sobre el nuevo juego
+
+Settings
+==Configuración
+
+Sitemap
+==Mapa del sitio
+
+Socal
+==SoCal
+
+Social App IDs
+==Identificadores de aplicación social
+
+Submit
+==Enviar
+
+Thumbnail path
+==Ruta en miniatura
+
+Thumbnail
+==Miniatura
+
+Title
+==Título
+
+To change the embedded codes, look in the media folder.
+==Para cambiar los códigos incrustados, busque en la carpeta de los medios de comunicación.
+
+Total Games
+==Total juegos
+
+Total Plays
+==Juegos totales
+
+Unapproved links
+==Enlaces no aprobadas
+
+Update Mochi ID
+==Actualización Mochi ID
+
+Upload A Game
+==Subir un juego
+
+Upload Games
+==Subir juegos
+
+Uploading
+==Subir
+
+Url
+==URL
+
+Users
+==Usuarios
+
+Vasco Feed Games
+==Vasco Feed juegos
+
+Vasco Games
+==Juegos de Vasco
+
+Version
+==Versión
+
+Webmaster resources
+==Recursos de webmaster
+
+when uploading, the dimensions are detected. Enter the values if you want to set your own.
+==al cargar, se detectan las dimensiones. Introduzca los valores si desea establecer su propio.
+
+Width
+==Ancho
+
+You must include a game file.
+==Debe incluir un archivo del juego.
+
+You must include a game pic.
+==Usted debe incluir una foto del juego.
+
+Your game was sent to the subscribed emails too.
+==Su juego fue enviado a los correos electrónicos suscritos también.
+
+Youtube videos automatically get title, description, keywords and thumbnail from Youtube API. Just put the video url in the 'File path' box, choose category and 'File' drop menu 'youtube' and click 'Add Media'.
+==Videos de YouTube Obtén automáticamente el título, descripción, palabras clave y miniatura de Youtube API. Pon el video url en el cuadro de la 'Ruta del archivo', elija categoría 'Archivo' gota menú 'youtube' y haga clic en 'Agregar medios'.
+
+Zip failed
+==Zip fallado
+
+Zipped successfully
+==Zip con éxito
+
+///////////
+==///////////
+
+Edit News
+==Editar noticias
+
+Admin - Cpanel
+==Admin - Cpanel
+
+Categories
+==Categorías
+
+Home
+==Página de inicio
+
+Links
+==Enlaces
+
+Settings
+==Configuración
+
+Users
+==Usuarios
+
+News
+==Noticias
+
+Other
+==Otros
+
+Add link
+==Añadir enlace
+
+Links
+==Enlaces
+
+Manage Ads
+==Administrar anuncios
+
+Add Ads
+==Añadir anuncios
+
+Comments
+==Comentarios
+
+Members Comments
+==Comentarios de los miembros
+
+News Blog Comments
+==Blog de noticias comentarios
+
+Create Feed
+==Crear Feed
+
+Sitemap
+==Mapa del sitio
+
+RSS Feed
+==Feed RSS
+
+News Blog RSS Feed
+==Blog de noticias RSS
+
+Games
+==Juegos
+
+Add Media
+==Añadir los medios de comunicación
+
+Add Code
+==Agregue el código
+
+Manage Games
+==Administrar juegos
+
+Upload Games
+==Subir juegos
+
+Broken Files
+==Archivos rotos
+
+Game Feeds
+==Juegos Feeds
+
+Update Mochi ID
+==Actualización Mochi ID
+
+//settings
+==//Settings
+
+Cpanel - Settings
+==CPanel - configuración
+
+Add News
+==Añadir noticias
+
+Categories
+==Categorías
+
+Links
+==Enlaces
+
+General Site Settings
+==Configuración del sitio general
+
+GENERAL SETTINGS
+==CONFIGURACIÓN GENERAL
+
+Version
+==Versión
+
+Unapproved links
+==Enlaces no aprobadas
+
+Comments
+==Comentarios
+
+Total Games
+==Total juegos
+
+Total Plays
+==Juegos totales
+
+Plays today
+==Juega hoy
+
+Members
+==Miembros
+
+Template
+==Plantilla
+
+Skin
+==Piel
+
+Anti-Spam
+==Anti-Spam
+
+Page Cache Life
+==Vida de caché de la página
+
+Use Captcha System?
+==¿Utilizar el sistema de Captcha?
+
+in seconds(300 = 5 minutes)
+==en segundos (300 = 5 minutos)
+
+GAME SETTINGS
+==CONFIGURACIÓN DEL JUEGO
+
+Lightbox Game play
+==Juego de lightbox
+
+Depends on availability in template
+==Depende de la disponibilidad en plantilla
+
+Games per category
+==Juegos por categoría
+
+Games sort
+==Juegos tipo
+
+newest
+==más reciente
+
+popular
+==popular
+
+random
+==al azar
+
+Games per page
+==Juegos por página
+
+(also for category pages)
+==(también para páginas de categoría)
+
+OTHER
+==OTROS
+
+Disable Site
+==Desactivar el sitio
+
+yes
+==Sí
+
+no
+==No
+
+Auto Approve Exchange links
+==Auto aprobar intercambio de enlaces
+
+Exchange Links on Home page
+==Intercambio de enlaces en la página de inicio
+
+SEO Friendly URLs
+==SEO Friendly URLs
+
+UPDATE
+==ACTUALIZACIÓN
+
+Email
+==Correo electrónico
+
+Site name
+==Nombre del sitio
+
+Slogan
+==Lema
+
+Meta Description(Seen in search engines)
+==Meta Description(Seen in search engines)
+
+Meta Keywords
+==Meta Keywords
+
+Admin password
+==Contraseña de admin
+
+New Pass
+==Nuevo paso
+
+Re-enter
+==Volver a entrar
+
+Re-enter Pass
+==Paso de volver a entrar
+
+Update Settings
+==Configuración de actualización
+
+One or more fields that were required were left empty.
+==Uno o más campos que fueron requeridos se quedaron vacíos.
+
+Click here to go back.
+==Haga clic aquí para volver.
+
+Files per page must be a number.
+==Archivos por página deben ser un número.
+
+Site settings updated!
+==Configuración del sitio actualizado!
+
+Click here to proceed.
+==Haz clic aquí para continuar.
+
+Passwords did not match!==No concordaban con las contraseñas!

@@ -1,0 +1,13 @@
+
+12-31-2013, 12:18
+	Error No: 0 - MySQL error Unknown column 'chatdisalbed' in 'field list' 
+	Query: "UPDATE settings SET gperpage = 15, numbgames = 3, gamesort = 'newest', approvelinks = 'no', numblinks = 10, seo = 'no' , lightbox = 'no', theme = 'tribox_25', skin = 'twins', disabled = 'no', chatdisalbed = 'yes', regclosed = 'no', email = '', sitename = 'yas252', slogan = '', metades = '', metakeywords = '',`userecaptcha` = 'yes', `min_time` = 300, `min_time_details` = 'You do not belong here!', `cachelife` = 60  where id = '1'"
+	#0 C:\wamp\www\yas252full\admin\settings.php(59): yasDB_update('UPDATE settings...')
+	#1 C:\wamp\www\yas252full\admin\index.php(120): include('C:\wamp\www\yas...')
+	#2 {main}
+12-31-2013, 12:18
+	Error No: 0 - MySQL error Unknown column 'chatdisalbed' in 'field list' 
+	Query: "UPDATE settings SET gperpage = 15, numbgames = 3, gamesort = 'newest', approvelinks = 'no', numblinks = 10, seo = 'no' , lightbox = 'no', theme = 'tribox_25', skin = 'twins', disabled = 'no', chatdisalbed = 'yes', regclosed = 'no', email = '', sitename = 'yas252', slogan = '', metades = '', metakeywords = '',`userecaptcha` = 'yes', `min_time` = 300, `min_time_details` = 'You do not belong here!', `cachelife` = 60  where id = '1'"
+	#0 C:\wamp\www\yas252full\admin\settings.php(59): yasDB_update('UPDATE settings...')
+	#1 C:\wamp\www\yas252full\admin\index.php(120): include('C:\wamp\www\yas...')
+	#2 {main}

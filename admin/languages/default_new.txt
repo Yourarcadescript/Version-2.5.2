@@ -1,0 +1,471 @@
+//general.php
+Edit News
+Admin - Cpanel
+Categories
+Links
+Home
+Settings
+Users
+News
+Other
+Add link
+Manage Ads
+Add Ads
+Comments
+Members Comments
+News Blog Comments
+Create Feed
+Sitemap
+RSS Feed
+News Blog RSS Feed
+Games
+Add Media
+Add Code
+Manage Games
+Upload Games
+Broken Files
+Game Feeds
+Update Mochi ID
+Mochi Games
+FGD Games
+FOG Games
+Playtomic Games
+Kongregate Games
+Vasco Games
+AGF Games
+
+//settings.php
+General Site Settings
+General Settings
+ADD NEWS
+Template
+Members
+Plays Today
+Total Plays
+Total Games
+Comments
+Unapproved Links
+Version
+Skin
+Anti-Spam
+Use captcha System ?
+Minimum Time to fill Reg Form
+Click here to proceed
+Site settings updated!
+in seconds (300 = 5 minutes) Enter 0 to disable
+Message to spammers
+This will be displayed if someone fills form before minimum time.
+in seconds (300 = 5 minutes)
+Page Cache Life
+Game Settings
+Lightbox Game play
+Depends on availability in template
+yes
+no
+Games per category
+Games sort
+popular
+newest
+random
+Games per page
+(also for category pages)
+Other
+Disable Site
+Chat Disabled
+Register Closed
+Auto Approve Exchange links
+Exchange Links on Home page
+SEO Friendly URLs
+Update
+Email
+Site name
+Slogan
+Meta Description (Seen in search engines)
+Meta Keywords
+Admin password
+New Pass
+Re-enter
+Re-enter Pass
+Update Settings
+Cpanel - Ads
+Ads
+Name
+Ad Code
+Submit
+Files per page must be a number.
+
+
+//add_ads.php
+Cpanel - Ads
+Ads
+Name
+Ad Code
+Submit
+
+//add_code.php
+Cpanel - Insert Code
+Add Embed Code
+Add Code
+Title
+Description
+Category
+Code
+Thumbnail
+Add Code!
+
+//add_down_game.php
+Name of the game:
+Game description:
+Keywords:
+Select Game thumbnail:
+Select Game file:
+*Link to the Mochi version of the game:
+Send notification to the subscribed emails about the new game:
+Checked = Yes | Unchecked = No
+Add Game To Download Section
+Cpanel - Download Game Section
+Zipped successfully
+
+//add_game.php
+Cpanel - Upload Games
+Add Game
+Upload A Game
+Instructions
+Keywords
+Game File Type
+Game File
+Height:*
+Width:*
+
+//add_link.php
+Cpanel - Links Exchange
+Url
+Reciprocal
+
+//add_media.php
+*Youtube videos automatically get title description keywords and thumbnail from Youtube API. Just put the video url in the File path box choose category and File drop menu youtube and click Add Media.
+File
+File path
+Thumbnail path
+Cpanel - Media
+
+//add_news.php
+Cpanel - News
+News Blog Comments
+Manage News
+Edit - News
+Date
+Topic
+News item
+Edit
+Delete
+News
+Add News Entry
+
+//broken_files.php
+Cpanel - Broken Files
+Check Broken Files
+The IDs below have broken thumbnails.
+The IDs below have broken games.
+
+//cache.php
+Cpanel - Manage Site Cache
+Clear Cache
+Clear Page Cache
+Clear Image Cache
+
+//footer.php
+YourArcadeScript.com
+Support Forum
+
+//gainfo.php
+Login (email)
+New Password
+Profile Name
+
+//id_mochigames.php
+Cpanel - Mochiads Publisher ID
+Setup
+You need a MochiAds Publisher ID to upload Mochi games through this menu.  If you need one you can get one here:
+After you have made the account enter your Publisher and Secret IDs below.
+Free MochiAds Publisher Signup
+Update your MochiAds Publisher ID if necessary:
+Mochiads Publisher ID
+Publisher ID
+Secret Key
+* The Publisher ID and Publisher Secret Key while logged into Mochimedia can be found here. If your Publisher ID is wrong, the feed will download but will be empty.
+
+//login.php
+Please login to access the admin area.
+Admin Password:
+
+//manage_ads.php
+Code for placement
+
+//manage_category.php
+Cpanel - Categories
+ADD GAME
+Manage Categories
+Name:
+ID
+Active
+Active:
+Order
+Parent
+Sub Cat of (id)
+Show on home page
+Meta description
+Display Order
+Parent category
+If not parent,id of the parent category
+
+//manage_comments.php
+Cpanel - Game Comments
+Manage Comments
+Game ID
+Comment
+Ip Address
+
+//manage_db_backup.php
+Cpanel - Database Backup
+Backup Arcade Database
+Google Analytics Info
+Google Analytics Login Info
+Create a database backup
+
+//manage_down_game.php
+Cpanel - Downloadable Games
+Thumb
+Game Title
+Down
+D.Mochi
+Edit - 
+
+//manage_forumcats.php
+Cpanel - Forum Categories
+Manage Forum Categories
+Edit - Category
+
+//manage_ga.php
+Logging into Google Analytics server failed.
+Make sure your login info is correct and try again.
+
+//manage_games.php
+Cpanel - Games
+Manage Games
+Game Review
+code
+Game Width
+Game Height
+Game Filter Search
+Category:
+Game Plays
+Featured
+Game plays
+Search Results
+Exact Search
+Game
+More
+Plays
+
+//manage_jobs.php
+Manage Scheduled Jobs
+Clear Daily Game Plays
+Update RSS Feeds
+Optimize database
+Update Sitemap
+GameQue Installs
+Create database backup
+Job
+Enabled
+Schedule
+Run Job Now
+
+//manage_kongregate.php
+Install Kongregate.com Feed Games
+Install
+Note: Installing a lot of games at once is resource intensive.
+
+//manage_links.php
+Manage links
+Cpanel - links
+Add Links
+ADD LINK
+Edit - Link
+In
+Out
+Site description
+Approved
+Site Title
+Site URL
+
+//manage_logs.php
+Log Files
+Arcade Database Errors
+Scheduled Jobs Log
+Admin Database Errors
+View Log file
+
+//manage_membercomment.php
+Cpanel - Members Comments
+Edit - Comment
+Manage Members Comments
+User ID
+
+//manage_mochi.php
+Install Mochimedia.com Feed Games
+Rating
+
+//manage_posts.php
+Cpanel - Forum Posts
+Manage Forum Post
+Message
+Topic ID
+User
+
+//manage_topics.php
+Cpanel - Forum Topics
+Author
+Views
+
+//manage_users.php
+Cpanel - Users
+Manage Users
+Username
+Date Joined
+Banned
+Email
+Edit Member
+Website
+Ban for x days
+
+//manage_vascogames.php
+Install Vascogames.com Feed Games
+
+//manageagffeed.php
+Install ArcadeGameFeed.com - Game Feed for Your Arcade!
+
+//managefgdfeed.php
+Install FlashGameDistribution.com Games
+Note: Installing many games at once is resource intensive.
+Featured Games
+Multiplayer
+Highscores
+Mobile Ready
+No Pregame Ads
+
+//managefogfeed.php
+Install FreeGamesForYourWebsite.com Feed Games
+Feed is not installed.
+
+//managegamequeue.php
+Your GameQueue is empty
+Load your GameQueue with games from the feed management pages.
+Source Feed
+
+//newsblogcomments.php
+Cpanel - Blog Comments
+Manage News Blog Comments
+One or more fields was left empty.
+Click here to go back
+Comment Successfully edited!
+You cannot edit a members comment that doesnt exist.
+Edit - Comment
+You cannot delete a members comment that does not exist!
+Members comment successfully deleted.
+You cannot delete this news comment that does not exist!
+No members comments in the database!
+News ID
+
+//left_column/comments.php
+Interaction
+Comments
+Members Comments
+News Blog Comments
+Manage Forum Topics
+Manage Forum Posts
+Manage Fourm Cats
+Manage Shouts
+
+//left_column/ga.php
+Google Analytics
+Google Analytics Data
+Google Analytics Login Info
+
+//left_column/social.php
+Social
+Social App IDs for Login
+Social App IDs
+
+//left_column/mochi.php
+Arcade Game Feed
+AGF Game Feed
+Feeds
+Mochi Feed Games
+Install Mochi Games
+FOG Feed Games
+FOG Feed
+FGD Feed
+FGD Feed Games
+Playtomic Feed
+Playtomic Feed Games
+Vascogames Feed
+Vascogames Feed Games
+Kongregate Feed
+Kongregate Feed Games
+
+//left_column/links.php
+Main
+Home
+Settings
+Categories
+Links
+Clear Cache
+Scheduled Jobs
+Manage Logs
+Manage Ads
+Add Ads
+Backup Database
+Logout
+
+//left_column/games.php
+Add Code
+Add Media
+Manage Games
+Manage GameQueue
+Broken Files
+Upload Games
+Manage Downloadables
+Manage Downloadable Games
+Add Downloadable Game
+
+//right_column/stats.php
+Unapproved links
+Plays today
+
+//right_column/sitemap.php
+Generate a game sitemap by clicking on the link.When sitemap is created it will show you link of the sitemap.xml file.
+
+//right_column/modrewrite.php
+For SEO URLs. If you select yes, your server must support mod rewrite. (most do)
+
+//right_column/media.php
+Height/Width not used for videos.
+To change the embedded codes, look in the media folder.
+For youtube videos, enter the address (i.e. 
+http://www.youtube.com/watch?v=aRn5-LQCg2s )in the File path.
+Do not forget to create, upload, and add a thumbnail image!
+
+//right_column/managedowngame.php
+Downloadable
+Here will show you the list of downloadable games that you have uploaded.Which you can also delete at any given time.
+
+//right_column/file.php
+Uploading
+Optional for
+when uploading the dimensions are detected. Enter the values if you want to set your own.
+Required for
+
+//right_column/code.php
+
+Do not forget to create, upload, and add a thumbnail image!
