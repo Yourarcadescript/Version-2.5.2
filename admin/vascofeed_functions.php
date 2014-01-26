@@ -114,7 +114,7 @@ function install_vascogame($gameid) {
 	$categories = array('action games' => 2, //Action
 						'adventure games' => 3, //Adventure
 						'strategy games' => 10, //Strategy
-						'skill games' => 10,  //Strategy
+						'car games' => 4,  //Sports 
 						'puzzle games' => 1,  //Puzzle
 						'arcade games' => 9,  //Arcade
 						'shooting games' => 5,  //Shooter
