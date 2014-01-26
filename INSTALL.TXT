@@ -5,7 +5,7 @@
 If you are unfamiliar with how to do this please ask for assistance in the forums.
 
 3) Run the install file YAS25install.php from your browser. The install script will ask for your database details and allow you to enter specifics for your arcade.
-The script will attempt to make certain folders writeable. If unsucessful please chmod these folders through your host's cpanel or ftp.
+The script will attempt to make certain folders writeable. If unsucessful please chmod these folders through your host's cpanel or ftp and be sure that includes folder have permission 755.
 
 4)Look for the free 500 game pack in the downloads.(These games can be seen on our http://www.keyarcade.com site - amongst others)
 Upload all games to the /swf folder and thumbnails to the /img folder. You may also consider purchasing premium gamepacks we offer.
@@ -19,7 +19,7 @@ Logos can be made for free at http://cooltext.com. Another good one is http://fl
 
 7)Look in the Admin panel under manage mochigames for details on setting up the 1 click install of Mochimedia distributed games.
 
-8)Default admin password is... admin. Change immediately.
+8)Default admin password is "admin"(without quotation mark). Change immediately.
 
 9)We offer script installation(includes gamepack installs) and low cost game packs. Look at our home page http://www.yourarcadescript.com for details.
 
