@@ -88,6 +88,7 @@ RewriteRule download.html$ index.php?act=download
 RewriteRule download/(.*)\.html$ index.php?act=download&page=$1
 RewriteRule unsubscribe.html$ index.php?act=unsubscribe
 RewriteRule mostplayed.html$ index.php?act=mostplayed
+RewriteRule mostplayed/(.*).html$ index.php?act=mostplayed&page=$1 [L]
 RewriteRule newest.html$ index.php?act=newest
 RewriteRule newest/(.*)\.html$ index.php?act=newest&page=$1 [L]
 RewriteRule toprated.html$ index.php?act=toprated
