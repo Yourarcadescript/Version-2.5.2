@@ -39,7 +39,9 @@ if (isset($_POST['upload']) && $_POST['upload']=="1") {
 		$zip->addFile($_FILES['file']['tmp_name'][1], $num.$_FILES['file']['name'][1]);
 		$zip->addFromString('description.txt', $file_desc);
 		$zip->close();
+		echo '<center>';
 		$translate->__('Zipped successfully');
+		echo '</center>';
 	} else $translate->__('Zip failed');
 
 	copy($_FILES['file']['tmp_name'][0], $setting['sitepath'] . "/ourgames/img/" . $_FILES['file']['name'][0]);
