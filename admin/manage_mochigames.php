@@ -370,7 +370,7 @@ while ($source = $result2->fetch_array(MYSQLI_NUM)) {
 			} 
 			$description = yasDB_clean($_GET['description']);
 			$keywords = yasDB_clean($_GET['keywords']);
-			echo '<META HTTP-EQUIV="Refresh" CONTENT="0; URL=index.php?act=managemochi&page='.$pageno.'&category='.$category.'&rating='.$rating.'&description='.$description.'&keywords='.$keywords.'&filter=Filter games;">';
+			echo '<META HTTP-EQUIV="Refresh" CONTENT="0; URL=index.php?act=managemochi&page='.$pageno.'&category='.$category.'&rating='.$rating.'&description='.$description.'&keywords='.$keywords.'&filter=Filter games">';
 			exit();
 		}
 		
