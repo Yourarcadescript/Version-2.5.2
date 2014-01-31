@@ -35,11 +35,11 @@ if(isset($_POST['add'])) {
 	$code = yasDB_clean($_POST['code']);
 	yasDB_insert("INSERT INTO games (title, description, category, thumbnail, code, height, width, type) values ('$title', '$desc', '{$_POST['category']}', '$thumb', '$code', '', '', 'CustomCode')",false);
 	echo '<center>';
-  $translate->__('Embed Code successfully added!');
-  echo '<br/><br/>';
+	$translate->__('Embed Code successfully added!');
+	echo '<br/><br/>';
 	echo '<a href="index.php?act=addmedia">';
-  $translate->__('Click here to proceed');
-  echo '</a><center>';
+	$translate->__('Click here to proceed');
+	echo '</a><center>';
 } else {
 ?>
 <div class="table">
