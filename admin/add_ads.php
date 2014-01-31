@@ -13,7 +13,9 @@ if (isset($_POST['add_ads'])) {
 	$name = yasDB_clean($_POST['name']);
 	$code = stripslashes($_POST['code']);
 	yasDB_insert("INSERT INTO `ads` ( `id` , `name` , `code`) VALUES ('', '".$name."', '".$code."')",false);
-	echo $translate->__('Ad Added!');
+	echo '<center>';
+	echo $translate->__('Add Added!');
+	echo '</center>';
 } else {
 	?>
 	<div class="table">
