@@ -204,6 +204,7 @@ if(!empty($_GET['edit'])) {
 				<option value="MOV">mov</option>
 				<option value="IMAGE">image</option>
 				<option value="YOUTUBE">youtube</option>
+				<option value="CustomCode">CustomCode</option>
 				</select> <input type="text" name="file" value="<?php echo $row['file'];?>" style="width:202px;" /></td>
 			</tr>
 			<tr class="bg">
