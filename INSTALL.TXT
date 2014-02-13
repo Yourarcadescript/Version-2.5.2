@@ -19,7 +19,7 @@ Logos can be made for free at http://cooltext.com. Another good one is http://fl
 
 7)Look in the Admin panel under manage mochigames for details on setting up the 1 click install of Mochimedia distributed games.
 
-8)Default admin password is "admin"(without quotation mark). Change immediately.
+8)Admin control panel is located in www.yourSiteName/admin Default admin password is "admin"(without quotation mark). Change immediately.
 
 9)We offer script installation(includes gamepack installs) and low cost game packs. Look at our home page http://www.yourarcadescript.com for details.
 
