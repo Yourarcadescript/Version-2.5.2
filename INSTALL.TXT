@@ -14,7 +14,7 @@ Upload all games to the /swf folder and thumbnails to the /img folder. You may a
 in the ad name. Of course you may create your own ads and place them in the script as you wish. From the admin panel note the ad number and 
 insert the code like this, assuming ad #3... <?php echo ad('3'); ?>
 
-6)Adding your own logo: The header logo is logo.pngor logo.jpg in the skins/'skin name'/images folder in each skin for each template. The logo is declared in the #top div in style.css.
+6)Adding your own logo: The header logo is logo.png or logo.jpg in the skins/'skin name'/images folder in each skin for each template. The logo is declared in the #top div in style.css.
 Logos can be made for free at http://cooltext.com. Another good one is http://flamingtext.com.
 
 7)Look in the Admin panel under manage mochigames for details on setting up the 1 click install of Mochimedia distributed games.
