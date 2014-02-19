@@ -42,5 +42,7 @@ $setting['tw_app_id'] = '';
 $setting['tw_app_secret'] = '';
 $setting['userecaptcha'] = 'yes';
 $setting['version'] = '2.5.1';
+$setting['min_time'] = '300';
+$setting['min_time_details'] = 'You do not belong here!';
 if (substr($setting['siteurl'], -1) != '/') $setting['siteurl'] .= '/';
 ?>
