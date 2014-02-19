@@ -2,7 +2,7 @@
 <div class="nav_box2">     
         <form name="browse" method='get' action="<?php echo $setting['siteurl'];?>index.php">
         <input type='hidden' name='act' value='search'/>
-        <input type="text" style="color:#999;width:93px;font-size:12px;" maxlength="18" size="20" name="q" onblur="this.value = this.value || this.defaultValue; this.style.color = '#999';" onfocus="this.value=''; this.style.color = '#000';" value="Type search here"/>
+        <input type="text" style="color:#999;width:93px;font-size:12px;" maxlength="18" size="20" name="q" onkeyup="noBad(this);" onblur="this.value = this.value || this.defaultValue; this.style.color = '#999';" onfocus="this.value=''; this.style.color = '#000';" value="Type search here"/>
         <input type="submit" value="Search" />
 		</form>
 </div></div>
