@@ -5,7 +5,7 @@
     <div id="div1">
         <form name="browse" method='get' action="<?php echo $setting['siteurl'];?>index.php">
         <input type='hidden' name='act' value='search'/>
-        <input type="text" style="width:115px;color:#999" maxlength="30" size="22" name="q" onblur="this.value = this.value || this.defaultValue; this.style.color = '#999';" onfocus="this.value=''; this.style.color = '#000';" value="Type search here"/>
+        <input type="text" style="width:115px;color:#999" maxlength="30" size="22" name="q" onkeyup="noBad(this);" onblur="this.value = this.value || this.defaultValue; this.style.color = '#999';" onfocus="this.value=''; this.style.color = '#000';" value="Type search here"/>
         <input type="submit" value="Search" />
         </form>
 </div></div><br/>
