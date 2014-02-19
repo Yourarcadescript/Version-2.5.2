@@ -52,7 +52,7 @@
 		  <div id="search">
           <form name="browse" method='GET' action="<?php echo $setting['siteurl'];?>index.php">
           <input type='hidden' name='act' value='search'>
-          <input type="text" style="color: #999; border:solid 1px #333;" maxlength="20" size="40" name="q" onBlur="this.value = this.value || this.defaultValue; this.style.color = '#999';" onFocus="this.value=''; this.style.color = '#000000';" value="Type game search here">
+          <input type="text" style="color: #999; border:solid 1px #333;" maxlength="20" size="40" name="q" onkeyup="noBad(this);" onblur="this.value = this.value || this.defaultValue; this.style.color = '#999';" onfocus="this.value=''; this.style.color = '#000';" value="Type search here"/>
           <input type="image" src="<?php echo $setting['siteurl'];?>templates/<?php echo $setting['theme'];?>/skins/<?php echo $setting['skin']; ?>/images/search.png" width="28" height="24" align="absmiddle" value="Submit" alt="Submit" />
           </form>
           </div>
