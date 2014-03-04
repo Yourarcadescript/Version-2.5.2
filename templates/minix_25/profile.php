@@ -19,7 +19,8 @@ if(isset($_POST['settings'])) {
 	$msn = yasDB_clean($_POST['msn']);
 	$skype = yasDB_clean($_POST['skype']);
 	$yahoo = yasDB_clean($_POST['yahoo']);
-	yasDB_update("UPDATE user SET website = '$website', name = '$name', email = '$email', location='$location', job='$job', aboutme='$aboutme', aim='$aim', msn='$msn', skype='$skype', yahoo='$yahoo' WHERE username = '$user'");
+	$cmtsdisabled = yasDB_clean($_POST['cmtsdisabled']);
+	yasDB_update("UPDATE user SET website = '$website', name = '$name', email = '$email', location='$location', job='$job', aboutme='$aboutme', aim='$aim', msn='$msn', skype='$skype', yahoo='$yahoo', cmtsdisabled='$cmtsdisabled' WHERE username = '$user'");
 	if(!empty($_POST['password'])) {
 	$password = md5(yasDB_clean($_POST['password']));
 	yasDB_update("UPDATE user SET password = '$password' WHERE username = '$user'");
@@ -39,7 +40,13 @@ if(isset($_POST['settings'])) {
 	AIM:<br /><input type="text" name="aim" value="' . $row['aim'] . '" size="50" /><p>
 	MSN:<br /><input type="text" name="msn" value="' . $row['msn'] . '" size="50" /><p>
 	Skype:<br /><input type="text" name="skype" value="' . $row['skype'] . '" size="50" /><p>
-	Yahoo:<br /><input type="text" name="yahoo" value="' . $row['yahoo'] . '" size="50" /><p>';
+	Yahoo:<br /><input type="text" name="yahoo" value="' . $row['yahoo'] . '" size="50" /><p>
+	Disable Profile Comments:<br />
+	<select name="cmtsdisabled">
+	<option value="'.$row['cmtsdisabled'].'"/>'.$row['cmtsdisabled'].'</option>
+	<option value="yes">yes</option>
+	<option value="no">no</option>
+	</select><p>';
 	if ($row['oauth_provider'] == "" || empty($row['oauth_provider'])) {
 		echo 'Password:(leave blank if no change)<br />
 		<input type="text" name="password" /><p>';
