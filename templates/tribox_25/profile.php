@@ -5,8 +5,43 @@
 if(isset($_SESSION["user"])) {
 	$user=$_SESSION["user"];
 } else {
-	echo "Not logged in!";
+?>
+  <div class="edit_profile">
+	<center>Not logged in!</center>
+  <div class="clear"></div></div></div>
+<?php
+  include("footer.php");
 exit;
+}
+if(isset($_GET['delete'])) {
+  $query = yasDB_select("SELECT id FROM user WHERE id = '{$_GET['delete']}'",false);
+  if ($query->num_rows == 0) {
+  if ($setting['seo'] == 'yes') {
+  $profile = $setting['siteurl'].'profile.html';
+  } else if($setting['seo'] == 'no'){
+  $profile = $setting['siteurl'].'index.php?act=profile';
+  }
+  ?>
+  <div class="edit_profile">
+  <center>You cannot delete an account that has been deleted.<br />
+  <a href="<?php echo $profile;?>">Click here to go back</a></center>
+  <div class="clear"></div></div></div>
+  <?php include ("footer.php");?>
+<?php
+  exit;
+  } else {
+  yasDB_delete("DELETE FROM user WHERE id = '{$_GET['delete']}'",false);
+  session_unset();
+  session_destroy();
+  ?>
+  <div class="edit_profile">
+  <center>Your account is now deleted.<br />Come back any time.<br />
+  <a href="<?php echo $setting['siteurl'].'index.php';?>">Click here to proceed</a></center>
+  <div class="clear"></div></div></div>
+  <?php include("footer.php");?>
+<?php
+  exit;
+  }
 }
 if(isset($_POST['settings'])) {
 	$website = yasDB_clean($_POST['website']);
@@ -44,7 +79,8 @@ if(isset($_POST['settings'])) {
 		echo 'Password:(leave blank if no change)<br />
 		<input type="text" name="password" /><p>';
 	}
-	echo'<input type="submit" name="settings" value="Update" />
+	echo'<input type="submit" name="settings" value="Update" /><br />Click on link below if you wish to delete your account.
+  <br /><a href="'.$setting['siteurl'].'index.php?act=profile&delete='.$row['id'].'" title="Are you sure you want to delete your account?" style="text-decoration:none;color:#000;">Delete Account?</a>
 	</form>
 	</div></div>';
 	$query->close();
