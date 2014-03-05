@@ -30,6 +30,12 @@ Skype:<br />
 <input type="text" name="skype" value="<?php echo $userdata['skype'];?>" size="50" /><p>
 Yahoo:<br />
 <input type="text" name="yahoo" value="<?php echo $userdata['yahoo'];?>" size="50" /><p>
+Disable Profile Comments:<br />
+<select name="cmtsdisabled">
+<option value="<?php echo $row['cmtsdisabled'];?>"/><?php echo $row['cmtsdisabled'];?></option>
+<option value="yes">yes</option>
+<option value="no">no</option>
+</select><p>
 <?php if (!$userdata['oauth_provider']) { ?>
 Password:(leave blank if no change)<br />
 <input type="password" name="password" /><p>
