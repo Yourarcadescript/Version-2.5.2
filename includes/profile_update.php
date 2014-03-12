@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$website = yasDB_clean($_POST['website']);
 	$name = yasDB_clean($_POST['name']);
 	$email = yasDB_clean($_POST['email']);
-  $location = yasDB_clean($_POST['location']);
+	$location = yasDB_clean($_POST['location']);
 	$job = yasDB_clean($_POST['job']);
 	$aboutme = yasDB_clean($_POST['aboutme']);
 	$aim = yasDB_clean($_POST['aim']);
