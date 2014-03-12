@@ -179,6 +179,7 @@ echo '<div class="container_box5"><div class="comment_box1">Post by - ' . $row['
 </form></center></div></div></div>
 <div class="clear"></div>
 <?php
+}
 } 
 ?>
 </div>
