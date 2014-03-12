@@ -97,6 +97,17 @@ $membersprofile = $setting['siteurl'].'index.php?act=profile';
 </div>
 <div class="clear"></div>
 </div>
+<?php
+if ($row['cmtsdisabled'] == 'yes') {
+?>
+<div class="container_box1">
+<div id="headergames2">Comments Disabled:</div>
+<div class="container_box3">You can not post a comment</div>
+<div class="clear"></div>
+</div>
+<?php
+} else {
+?>
 <div class="container_box1">
 <div id="headergames2">Member's Comments:</div>
 <div id="messages">
@@ -192,6 +203,7 @@ $query->close();
 </form></center></div></div>
 <div class="clear"></div>
 <?php
+    }
 }
 ?>
 </div>
