@@ -91,6 +91,15 @@ Age: ' . $row['age'] . '</div>
 </div></div><div class="clear"></div>';
 ?>
 </div>
+<?php
+if ($row['cmtsdisabled'] == 'yes') {
+?>
+<div class="container_box1">
+<div class="header">Comments Disabled:</div>
+<div class="container_box3">You can not post a comment</div>
+<div class="clear"></div>
+</div>
+<?php } ?>
 <div class="container_box1">
 <div class="header">Member's Comments:</div>
 <div class="container_box3">
