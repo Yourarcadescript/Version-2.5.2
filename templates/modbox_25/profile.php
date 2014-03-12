@@ -48,7 +48,7 @@ if (isset($_POST['settings'])){
 	$msn = yasDB_clean($_POST['msn']);
 	$skype = yasDB_clean($_POST['skype']);
 	$yahoo = yasDB_clean($_POST['yahoo']);
-  $cmtsdisabled = yasDB_clean($_POST['cmtsdisabled']);
+	$cmtsdisabled = yasDB_clean($_POST['cmtsdisabled']);
 	yasDB_update("UPDATE user SET website = '$website', name = '$name', email = '$email', location='$location', job='$job', aboutme='$aboutme', aim='$aim', msn='$msn', skype='$skype', yahoo='$yahoo', cmtsdisalbed='$cmtsdisabled' WHERE username = '$user'");
 	if(!empty($_POST['password'])) {
 	$password = md5(yasDB_clean($_POST['password']));
