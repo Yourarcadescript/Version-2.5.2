@@ -218,3 +218,14 @@ table.list.style1 a:hover {font-size:12px;font-weight:bold;color:#CD6600;text-al
 .container_box5{background:#333;color:#FFF;float:left;background-position:center;margin-bottom:2px;margin-left:7px;margin-top:2px;text-align:center;width:700px;border:ridge #000 2px;-moz-border-radius: 10px;-webkit-border-radius: 10px;-khtml-border-radius: 10px;border-radius: 10px;}
 .game_ad{float:left;height:60px;width:468px;border: 2px solid #713900;margin: 0px 5px 10px 0px;padding:5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-khtml-border-radius: 5px;border-radius: 5px;}
 .game_banner{float:left;height:100px;width:100px;border: 2px solid #713900;margin: 0px 10px 10px 10px;}
+/*******User Comments*************/
+.cm-box { width:710px; background:#333;height:100px; float:left; margin:4px; }
+.avatar-img { width:80px; height:80px; float:left; background-color:#6CF; margin:4px;}
+/*********Frst Comment***********/
+.cmmnts { width:600px; float:left; margin:5px; height:80px;color:#FFF; margin-left:0;}
+/*******Second comment***********/
+.scnd-cmnt { width:600px; float:left; margin:5px; height:80px; margin-top:10px; color:#FFF;}
+/********Cmnt Text**************/
+.usr-cmnt{width:560px; height:46px; float:left; margin:10px;/*background-color:#093; */margin-left:24px; border-radius:4px}
+.usr-cmnt-2{width:560px; height:46px; float:right; margin:10px;/*background-color:#093; */margin-right:24px; border-radius:4px; text-align:right}
+.cmmnts p {}
