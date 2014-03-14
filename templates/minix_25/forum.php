@@ -3,6 +3,128 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 ?>
+<!-- ShoutBox #1 Start -->
+
+<?php
+if ($setting['chatdisabled'] == 'yes') {
+echo '';
+} else {
+if (isset($_SESSION['user'])) { ?>
+<div class="container_box1">
+<div class="forumheader">&nbsp;ShoutBox:</div>
+<div class="table">
+<table class="listing" cellpadding="0" cellspacing="0">
+<td class="shoutbox">
+<?php
+if (isset($_SESSION['user'])) {
+  if (isset($_POST['name'])) {
+    $name = $_POST['name'];
+  } else if (isset($_SESSION['user'])) {
+    $name = $_SESSION['user'];
+  } else {
+    $name = '';
+  }
+  if (isset($_POST['Submit'])) {
+    $id = yasDB_clean($_POST['id']);
+    $text = yasDB_clean($_POST['text']);
+    $date = yasDB_clean($_POST['date']);
+
+    if (isset($_POST['name'])) {
+      $name = yasDB_clean($_POST['name']);
+    } else if (isset($_SESSION['user'])) {
+      $name = $_SESSION['user'];
+    } else {
+      $name = '';
+    }
+
+  $date = date("m-j-y G:i "); //create date time
+
+  $sql = yasDB_insert("INSERT INTO `shouts` (id, text, date, name) VALUES ('', '$text', '$date', '$name')");
+  $result = $sql;
+  if($result){
+  if ($setting['seo'] == 'yes') {
+    $forumlink = $setting['siteurl'].'forum.html';
+  } else {
+    $forumlink = $setting['siteurl'] . 'index.php?act=forum';
+  }
+  ?>
+  <META HTTP-EQUIV="refresh" CONTENT="15" URL="<?php echo $forumlink;?>">
+  <?php
+  }
+} else {
+  if ($setting['seo'] == 'yes') {
+    $forumlink = $setting['siteurl'].'forum.html';
+  } else {
+    $forumlink = $setting['siteurl'] . 'index.php?act=forum';
+  }
+?>
+<div class="shoutform">
+<form id="form1" name="form1" method="post" action="">
+<input name="name" type="hidden" value="<?php echo $name;?>"/>
+<input name="date" type="hidden" value=""/>
+Chat:<input type="text" name="text" class="shouttext" onkeyup="noBad(this);" onblur="this.value = this.value || this.defaultValue; this.style.color = '#999';" onfocus="this.value=''; this.style.color = '#000';" value="Chat here!"/>
+<input type="submit" class="shoutbutton" name="Submit" value="Shout" />&nbsp;<a href="<?php echo $forumlink;?>" onclick="window.location.reload();"><img src="<?php echo $setting['siteurl'],'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/buttons/refresh.png';?>" style="width:24px;height:24px;position:absolute;" align="center" title="Refresh"></a>
+<input type="hidden" name="id" value="<?php echo $id;?>"/>
+</form>
+</div>
+<?php }
+}?>
+<div id="chat">
+<?php
+  $query = yasDB_select("SELECT * FROM shouts");
+  $prefix = $setting['siteurl'] . 'templates/' . $setting['theme'] . '/skins/' . $setting['skin'] . '/images/smileys/';
+  if($query->num_rows == 0) {
+  echo '<div id="messageid">Shout Box Cleared....</div>';
+  } else {
+  $query = yasDB_select("SELECT shouts.text,shouts.date,shouts.name,user.id,user.username,user.avatarfile,user.useavatar FROM shouts LEFT JOIN user ON shouts.name = user.username ORDER BY shouts.id DESC LIMIT 20");
+    while($row = $query->fetch_array(MYSQLI_ASSOC)) {
+    $id = $row['id'];
+    $username = $row['name'];
+    $date = $row['date'];
+    $text = $row['text'];
+    $text = str_replace(':D','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/biggrin.gif" title="biggrin" alt="biggrin" />',$text);
+    $text = str_replace(':?','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/confused.gif" title="confused" alt="confused" />',$text);
+    $text = str_replace('8)','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/cool.gif" title="cool" alt="cool" />',$text);
+    $text = str_replace(':cry:','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/cry.gif" title="cry" alt="cry" />',$text);
+    $text = str_replace(':shock:','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/eek.gif" title="eek" alt="eek" />',$text);
+    $text = str_replace(':evil:','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/evil.gif" title="evil" alt="evil" />',$text);
+    $text = str_replace(':lol:','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/lol.gif" title="lol" alt="lol" />',$text);
+    $text = str_replace(':x','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/mad.gif" title="mad" alt="mad" />',$text);
+    $text = str_replace(':P','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/razz.gif" title="razz" alt="razz" />',$text);
+    $text = str_replace(':oops:','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/redface.gif" title="redface" alt="redface" />',$text);
+    $text = str_replace(':roll:','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/rolleyes.gif" title="rolleyes" alt="rolleyes" />',$text);
+    $text = str_replace(':(','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/sad.gif" title="sad" alt="sad" />',$text);
+    $text = str_replace(':)','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/smile.gif" title="smile" alt="smile" />',$text);
+    $text = str_replace(':o','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/surprised.gif" title="surprised" alt="surprised" />',$text);
+    $text = str_replace(':twisted:','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/twisted.gif" title="twisted" alt="twisted" />',$text);
+    $text = str_replace(':wink:','<img src="' . $setting['siteurl'].'templates/'.$setting['theme'].'/skins/'.$setting['skin'].'/images/smileys/wink.gif" title="wink" alt="wink" />',$text);
+    if ( $row['useavatar'] == '1' ) {
+      $avatarimage = $setting['siteurl'] . 'avatars/' . $row['avatarfile'];
+    } else {
+      $avatarimage = $setting['siteurl'] . 'avatars/useruploads/noavatar.JPG';
+    }
+    if ($setting['seo'] == 'yes') {
+      $memberlink = $setting['siteurl'].'showmember/'.$id.'.html';
+    } else {
+      $memberlink = $setting['siteurl'] . 'index.php?act=showmember&id='.$id ;
+    }
+    ?>
+    <div id="messageid">
+    <a href="<?php echo $memberlink;?>"><img src="<?php echo $avatarimage;?>" width="25" height="25" align="left" style="margin:1px;" title="<?php echo $username;?>"></a>&nbsp;<a href="<?php echo $memberlink;?>" title="<?php echo $username;?>"><?php echo $username;?></a>&nbsp; : &nbsp;<?php echo $date;?>&nbsp; - &nbsp;<?php echo $text;?>
+    </div>
+<?php }
+} ?>
+</div>
+<div class="clear"></div>
+</td>
+</table>
+</div>
+<div class="clear"></div>
+</div>
+<!-- ShoutBox #1 End -->
+<?php
+}
+}?>
 <div class="container_box1"><div class="forumheader">Forum</div>
 <?php
 //This here will check to see if 0 rows then no cats will show
