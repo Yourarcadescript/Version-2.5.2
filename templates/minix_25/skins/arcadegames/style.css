@@ -229,3 +229,14 @@ table.list.style1 a:hover {font-size:12px;font-weight:bold;color:#CD6600;text-al
 .usr-cmnt{width:560px; height:46px; float:left; margin:10px;/*background-color:#093; */margin-left:24px; border-radius:4px}
 .usr-cmnt-2{width:560px; height:46px; float:right; margin:10px;/*background-color:#093; */margin-right:24px; border-radius:4px; text-align:right}
 .cmmnts p {}
+/* Chat */
+table.listing .shoutbox { width:100%; text-align:left; }
+#chat { background:#f2f2f2; float:left; color:#333; position:relative; border:1px solid #000; width:98%; height:180px; margin-left:1%; margin-right:1%; overflow-y:scroll; border-radius:5px; }
+#messageid { float:left; color:#000; position:relative; width:98%; height:auto; padding:0.2%; margin-left:4px;word-wrap:break-word; }
+#messageid a { float:left; font-family:Arial; font-size:13px; color:#320b00; text-decoration:none; }
+#messageid a:hover { float:left; font-family:Arial; font-size:13px; color:#c99c6e; text-decoration:none; }
+.shoutform { float:left; margin-left:1%; color:#000; font-size:14px; font:bold; margin-bottom:1%; width:99%; height:22px; text-align:center; }
+.shouttext { background:#f2f2f2; color:#000; font-family:Arial; font-size:12px; height:20px; margin-left:1px; width:50%; border-radius:5px; padding:0 5px; border:ridge #000 1px; }
+.shoutbutton { width:60px; padding:2px; background:#CD6600; color:#fff; border-radius:5px; border:1px solid #320b00; cursor:pointer; text-decoration:none; }
+.shoutbutton:hover { background:#026CB1; border:1px solid #000; cursor:pointer; text-decoration:none; border-radius:5px; }
+/* End Chat */
