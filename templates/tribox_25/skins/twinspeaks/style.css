@@ -341,7 +341,7 @@ table.listing .shoutbox { width:100%; text-align:left; }
 #breadcrumb {
 position: relative;
 float: left;
-color: #FFF;
+color: #000;
 width: 556px;
 height: 24px;
 background: #fff url('images/navh4.jpg');
@@ -350,6 +350,7 @@ line-height: 25px;
 text-align: left;
 font-size: 12px;
 font-family: Verdana, Geneva, sans-serif;
+margin-bottom:4px;
 }
 
 #breadcrumb li {
@@ -366,11 +367,11 @@ font-family: Verdana, Geneva, sans-serif;
     background-position:right;
     padding-right: 15px;
     text-decoration: none;
-    color:#FFFF00;
+    color:#000;
 }
 
 
 #breadcrumb a:hover {
-    color:#35acc5;
+    color:#333;
 }
 /*Breadcrumb*/
