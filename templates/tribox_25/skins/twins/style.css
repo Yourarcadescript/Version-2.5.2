@@ -315,3 +315,41 @@ table.listing .shoutbox { width:100%; text-align:left; }
 .shoutbutton { width:60px; padding:2px; background:#94C2E8; color:#fff; border-radius:5px; border:1px solid #320b00; cursor:pointer; text-decoration:none; }
 .shoutbutton:hover { background:#94C2E8; color:#333;border:1px solid #000; cursor:pointer; text-decoration:none; border-radius:5px; }
 /* End Chat */
+/*BreadCrumb*/
+
+#breadcrumb {
+position: relative;
+float: left;
+color: #FFF;
+width: 556px;
+height: 24px;
+background: #fff url('images/navh4.jpg');
+padding-left: 10px;
+line-height: 25px;
+text-align: left;
+font-size: 12px;
+font-family: Verdana, Geneva, sans-serif;
+}
+
+#breadcrumb li {
+    list-style-type:none;
+    float:left;
+    padding-left:10px;
+}
+
+#breadcrumb a {
+    height:24px;
+    display:block;
+    background: url('images/nav/bc_separator.png'); 
+    background-repeat:no-repeat; 
+    background-position:right;
+    padding-right: 15px;
+    text-decoration: none;
+    color:#FFFF00;
+}
+
+
+#breadcrumb a:hover {
+    color:#35acc5;
+}
+/*Breadcrumb*/
