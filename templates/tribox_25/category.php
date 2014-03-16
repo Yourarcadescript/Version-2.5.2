@@ -17,8 +17,15 @@ if ($data) {
 		}
 	}
 	?>
-	<div id="cat_main_header">
-	<?php echo $cat_data ['name'];?></div>
+<!-- AJ-BreadCrumb Start -->
+<ul id="breadcrumb">
+<!-- home-nav -->
+<li><a href="<?php echo $setting['siteurl'];?>" onMouseover="showhint('<b><?php echo $setting['sitename'];?></b>',this, event, 'auto')">Home</a></li>
+<!-- home-nav-end -->
+<!-- start: cat-nav -->
+<li><?php echo $cat_data ['name'];?></li>
+</ul>
+<!-- AJ-BreadCrumb-End -->
 	<div id="cat_main_box">
 	<?php	
 	$query = yasDB_select("SELECT * FROM categories WHERE active='yes' AND parent='no' ORDER BY `order` desc");
