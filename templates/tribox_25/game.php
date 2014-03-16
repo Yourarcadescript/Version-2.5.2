@@ -32,8 +32,30 @@ if ($setting['lightbox'] == 'yes') {
 	if ($row['type'] == 'SWF' || $row['type'] == 'MPG' || $row['type'] == 'IMAGE' || $row['type'] == 'YOUTUBE' || $row['type'] == 'CustomCode'){  
 		$displayed = 'yes';
 		?>
-		<div id="center">  
-			<div class="game_header"><?php echo $row['title'];?></div>   
+		<div id="center">
+    <!-- AJ-BreadCrumb Start -->
+<ul id="breadcrumb">
+<!-- home-nav -->
+<li><a href="<?php echo $setting['siteurl'];?>" onMouseover="showhint('<b><?php echo $setting['sitename'];?></b>',this, event, 'auto')">Home</a></li>
+<!-- home-nav-end -->
+<!-- start: cat-nav -->
+<li><?php
+$catcheck = yasDB_select("SELECT `name` FROM `categories` WHERE `id` = {$row['category']}");
+$catname = $catcheck->fetch_array(MYSQLI_ASSOC);
+if ($setting['seo']=='yes') { ?>
+    <a href="<?php echo $setting['siteurl'];?>category/<?php echo $row['category'];?>/1.html" onMouseover="showhint('<b><?php echo ucfirst($catname['name']);?></b>',this, event, 'auto')"><?php echo ucfirst($catname['name']);?></a>
+    <?php
+} else { ?>
+    <a href="<?php echo $setting['siteurl'];?>index.php?act=cat&id=<?php echo $row['category'];?>" onMouseover="showhint('<b><?php echo ucfirst($catname['name']);?></b><br/><b>Description: </b><?php echo ucfirst($catd['desc']);?> ',this, event, 'auto')"><?php echo ucfirst($catname['name']);?></a>
+    <?php
+}
+?>
+</li>
+<!-- end: cat-nav --><!-- start: game_nav -->
+<li><?php echo $row['title'];?></li>
+<!-- end: game_nav -->
+</ul>
+<!-- AJ-BreadCrumb-End -->
             <div class="game_box">
 				<?php // set light box according to type
 				switch ($row['type']) {
@@ -197,8 +219,30 @@ if ($setting['lightbox'] == 'yes') {
 /////////////////////////////////////////////////////////////////////
 if ($setting['lightbox']=='no'){
     ?>
-<div id="center">  
-<div class="game_header"><?php echo $row['title'].'<'.$setting['lightbox'].'>';?></div>   
+<div id="center">
+<!-- AJ-BreadCrumb Start -->
+<ul id="breadcrumb">
+<!-- home-nav -->
+<li><a href="<?php echo $setting['siteurl'];?>" onMouseover="showhint('<b><?php echo $setting['sitename'];?></b>',this, event, 'auto')">Home</a></li>
+<!-- home-nav-end -->
+<!-- start: cat-nav -->
+<li><?php
+$catcheck = yasDB_select("SELECT `name` FROM `categories` WHERE `id` = {$row['category']}");
+$catname = $catcheck->fetch_array(MYSQLI_ASSOC);
+if ($setting['seo']=='yes') { ?>
+    <a href="<?php echo $setting['siteurl'];?>category/<?php echo $row['category'];?>/1.html" onMouseover="showhint('<b><?php echo ucfirst($catname['name']);?></b>',this, event, 'auto')"><?php echo ucfirst($catname['name']);?></a>
+    <?php
+} else { ?>
+    <a href="<?php echo $setting['siteurl'];?>index.php?act=cat&id=<?php echo $row['category'];?>" onMouseover="showhint('<b><?php echo ucfirst($catname['name']);?></b><br/><b>Description: </b><?php echo ucfirst($catd['desc']);?> ',this, event, 'auto')"><?php echo ucfirst($catname['name']);?></a>
+    <?php
+}
+?>
+</li>
+<!-- end: cat-nav --><!-- start: game_nav -->
+<li><?php echo $row['title'].'<'.$setting['lightbox'].'>';?></li>
+<!-- end: game_nav -->
+</ul>
+<!-- AJ-BreadCrumb-End -->
 <div class="game_box">
  <div class="game_box_ad"><div class="game_ad">
 				<?php 
