@@ -11,8 +11,15 @@ if ($data) {
 ?>
 <div id="center">
 <div class="container_box1">
-<div id="headergames2"><?php echo $cat_data ['name'];?>
-</div>
+<!-- AJ-BreadCrumb Start -->
+<ul id="breadcrumb">
+<!-- home-nav -->
+<li><a href="<?php echo $setting['siteurl'];?>" onMouseover="showhint('<b><?php echo $setting['sitename'];?></b>',this, event, 'auto')">Home</a></li>
+<!-- home-nav-end -->
+<!-- start: cat-nav -->
+<li><?php echo $cat_data ['name'];?></li>
+</ul>
+<!-- AJ-BreadCrumb-End -->
 <?php	
 	$count = yasDB_select("SELECT count(id) AS count FROM `games` where category = " . $id);
 	$total = $count->fetch_array(MYSQLI_ASSOC);
