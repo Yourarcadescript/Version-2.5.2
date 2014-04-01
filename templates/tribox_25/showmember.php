@@ -29,34 +29,42 @@ $website = '<a href="'.$row['website'].'" target="_blank">Website</a><br>';
 } else {
 $website = 'No Website';
 };
-if ( $row['location'] != '') {
-$location = ''. $row['location'].'<br>';
-} else {
-$location = 'Place where you stay.<br>';
-};
-if ( $row['job'] != '') {
-$occupation = ''. $row['job'].'<br>';
-} else {
-$occupation = 'Work place.<br>';
-};
 if ( $row['useavatar'] == '1' ) {
 $avatarimage = $setting['siteurl'] . 'avatars/' . $row['avatarfile'];
 }else { 
 $avatarimage = $setting['siteurl'] . 'avatars/useruploads/noavatar.JPG';
 }
-echo '<div class="profile_header">About Me</div>
-<div class="members_profile_box">
-<div class="profile_box1">Username: '.$row['username'].'<br>
-<img src="'.$avatarimage.'" height="100" width="100">
-<br/>';
-if ($setting['seo'] == 'yes') {
-	echo '<a href="'.$setting['siteurl'].'/profile.html">Edit Profile</a>';
+if ($row['deact'] == 'deactivate') {
+if ($setting['seo']=='yes') {
+$profile = $setting['siteurl'].'profile.html';
 } else {
-	echo '<a href="'.$setting['siteurl'].'/index.php?act=profile">Edit Profile</a>';
+$profile = $setting['siteurl'].'index.php?act=profile';
 }
-echo '<hr>'.$website.'<hr> 
-Age: ' . $row['age'] . '</div>
-<div class="profile_box4">' . $row['aboutme'] . '</div>
+echo '
+<div class="profile_header">Activate Account</div>
+<div class="members_profile_box">
+    <center>
+    This account is deactivated.<br />
+    Please click on link to activate your account.<br />
+    <a href="'.$profile.'">Edit Profile</a></center>
+</div>
+<div class="clear"></div>';
+} else { ?>
+<div class="profile_header">About Me</div>
+<div class="members_profile_box">
+<div class="profile_box1">
+<?php
+if ($row['shname'] == 'hidden') { echo 'Username:<hr>'.$row['username'].'<hr>'; } else { echo 'Real Name:<hr>'.$row['name'].'<hr>'; }
+echo '<img src="'.$avatarimage.'" height="100" width="100"><br/>';
+if ($setting['seo'] == 'yes') {
+	echo '<a href="'.$setting['siteurl'].'profile.html">Edit Profile</a>';
+} else {
+	echo '<a href="'.$setting['siteurl'].'index.php?act=profile">Edit Profile</a>';
+}
+echo '<hr>'.$website.'';?><hr> 
+</div>
+<div class="profile_box4"><?php if ($row['shabout'] == 'hidden') { echo ''; } else { echo 'Intrests<hr>'.$row['aboutme'].''; } ?></div>
+<div class="profile_box4"><?php if ($row['shhobs'] == 'hidden') { echo ''; } else { echo 'Hobbies<hr>'.$row['hobbies'].''; } ?></div>
 </div>
 <div class="profile_header">My Info:</div>
 <div class="members_profile_box">
@@ -65,13 +73,13 @@ Age: ' . $row['age'] . '</div>
 <div class="profile_header2">Joined:</div>
 <div class="profile_header2">Plays:</div>
 <div class="profile_header2">Points:</div>
-<div class="profile_header2">Occupation:</div>
+<div class="profile_header2">Email:</div>
 </div><div class="profile_box3">
-<div class="profile_text">'.$location.'</div>
-<div class="profile_text">' . $joined . '</div>
-<div class="profile_text">'.$row['plays'].'</div>
-<div class="profile_text">'. $points .'</div>
-<div class="profile_text">'.$occupation.'</div>
+<div class="profile_text"><?php if ($row['shloc'] == 'hidden') { echo ''; } else { echo ''.$row['location'].''; } ?></div>
+<div class="profile_text"><?php echo $joined;?></div>
+<div class="profile_text"><?php echo $row['plays'];?></div>
+<div class="profile_text"><?php echo $points;?></div>
+<div class="profile_text"><?php if ($row['sheml'] == 'hidden') { echo ''; } else { echo ''.$row['email'].''; }?></div>
 </div></div>
 <div class="profile_header">Contact Info:</div>
 <div class="members_profile_box">
@@ -81,21 +89,20 @@ Age: ' . $row['age'] . '</div>
 <div class="profile_header2">Skype:</div>
 <div class="profile_header2">Yahoo:</div>
 </div><div class="profile_box3">
-<div class="profile_text"> '.$row['aim'].'</div>
-<div class="profile_text">'.$row['msn'].'</div>
-<div class="profile_text">'.$row['skype'].'</div>
-<div class="profile_text">'.$row['yahoo'].'</div>
-</div></div><div class="clear"></div>';
-?>
+<div class="profile_text"></div>
+<div class="profile_text"></div>
+<div class="profile_text"></div>
+<div class="profile_text"></div>
+</div></div><div class="clear"></div>
 </div>
 <?php
-if ($row['cmtsdisabled'] == 'yes') {
-?>
+if ($row['cmtsdisabled'] == 'hidden') {
+echo '
 <div class="showmember_header">Comments Disabled:</div>
-<div class="showmember_box"><div class="members_profile_box">
-You can not post a comment
-</div><div class="clear"></div></div>
-<?php
+<div class="showmember_box">
+<div class="members_profile_box">You can not post a comment</div>
+<div class="clear"></div>
+</div>';
 } else {
 ?>
 <div class="showmember_header">Member's Comments:</div>
@@ -138,7 +145,7 @@ echo '<div id="member_comment_box1">' . $row['name'] . '</div><div id="member_co
 <div id="comment_box3">
 <center>
 <form name="addcomment" id="addcomment" method="post" action=""><strong>Message:</strong><br />
-<textarea name="comment" rows="3" cols="40" id="comment_message"></textarea>
+<textarea name="comment" rows="3" cols="40" style="color:#999" onkeyup="noBad(this);" onkeyup="noBad(this);" onblur="this.value = this.value || this.defaultValue; this.style.color = '#999';" onfocus="this.value=''; this.style.color = '#000';" value="Type comment here" id="comment_message"></textarea>
 <br />
 <input type="hidden" name="timestamp" id="timestamp" value="<?php echo time(); ?>" />
 </center></div>
@@ -171,6 +178,7 @@ echo '<div id="member_comment_box1">' . $row['name'] . '</div><div id="member_co
 </form></center></div></div></div>
 <div class="clear"></div>
 <?php
+}
 }
 } 
 ?>
