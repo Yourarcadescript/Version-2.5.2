@@ -222,3 +222,9 @@ table.listing .shoutbox { width:100%; text-align:left; }
 .shoutbutton { width:60px; padding:2px; background:#CC0000; color:#fff; border-radius:5px; border:1px solid #320b00; cursor:pointer; text-decoration:none; }
 .shoutbutton:hover { background:#00A300; color:#fff;border:1px solid #000; cursor:pointer; text-decoration:none; border-radius:5px; }
 /* End Chat */
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;overflow:hidden;word-break:normal;border-color:#EDEDED;color:#333;background-color:#EDEDED;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;overflow:hidden;word-break:normal;border-color:#EDEDED;color:#FFF;background-color:#333;}
+.tg .tg-0ord{text-align:left}
+.tg .tg-s6z2{text-align:center}
+.tg .tg-vn4c{text-align:left;background-color:#ffffff;}
