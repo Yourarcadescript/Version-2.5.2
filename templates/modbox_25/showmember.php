@@ -8,7 +8,8 @@ echo '<span style="font-size:150%;text-align:center;">You must Register or log i
 if(isset($_POST['addcomment'])) {
 if(empty($_POST['userid'])) {
 echo 'Sorry, the member you were commenting seems to be invalid.';
-} elseif (empty($_POST['comment']) || empty($_POST['name'])) {
+} elseif (
+empty($_POST['comment']) || empty($_POST['name'])) {
 echo 'Please go back and try again, it seems the comment or name was left empty.';
 } else {
 $userid = yasDB_clean($_POST['userid']);
@@ -99,7 +100,9 @@ if ($row['cmtsdisabled'] == 'yes') {
 <div class="container_box3">You can not post a comment</div>
 <div class="clear"></div>
 </div>
-<?php } ?>
+<?php
+} else {
+?>
 <div class="container_box1">
 <div class="header">Member's Comments:</div>
 <div class="container_box3">
@@ -145,7 +148,7 @@ echo '<div class="container_box5"><div class="comment_box1">Post by - ' . $row['
 <div class="container_box4">
 <center>
 <form name="addcomment" id="addcomment" method="post" action=""><strong>Message:</strong><br />
-<textarea name="comment" rows="3" cols="40" id="comment_message"></textarea>
+<textarea name="comment" rows="3" onkeyup="noBad(this);" onblur="this.value = this.value || this.defaultValue; this.style.color = '#999';" onfocus="this.value=''; this.style.color = '#000';" cols="40" id="comment_message"></textarea>
 <br />
 <input type="hidden" name="timestamp" id="timestamp" value="<?php echo time(); ?>" /><br/>
 </center></div>
@@ -174,7 +177,7 @@ echo '<div class="container_box5"><div class="comment_box1">Post by - ' . $row['
 <input type="hidden" name="recaptcha" id="recaptcha" value="no">
 <input type="hidden" name="security" id="security" value="10">
 <input type="hidden" name="member" value="yes">
-<input type="hidden" name="userid" id="userid" value="<?php echo $id; ?>">
+<input type="hidden" name="userid" id="userid" value="<?php echo $id; ?>"><br/><br/>
 <input name="addcomment" type="submit" value="Add Comment" style="border: 1px solid #000; margin-top: 2px;" /><br/><br/>
 </form></center></div></div></div>
 <div class="clear"></div>
