@@ -22,6 +22,8 @@ Occupation:<br />
 <input type="text" name="job" value="<?php echo $userdata['job'];?>" size="50" /><p>
 About Me:<br />
 <textarea name="aboutme" rows="5" cols="38"><?php echo $userdata['aboutme'];?></textarea><p>
+Hobbies:<br />
+<textarea name="hobbies" rows="8" cols="50"><?php echo $userdata['hobbies'];?></textarea><p>
 AIM:<br />
 <input type="text" name="aim" value="<?php echo $userdata['aim'];?>" size="50" /><p>
 MSN:<br />
@@ -32,10 +34,40 @@ Yahoo:<br />
 <input type="text" name="yahoo" value="<?php echo $userdata['yahoo'];?>" size="50" /><p>
 Disable Profile Comments:<br />
 <select name="cmtsdisabled">
-<option value="<?php echo $row['cmtsdisabled'];?>"/><?php echo $row['cmtsdisabled'];?></option>
-<option value="yes">yes</option>
-<option value="no">no</option>
+<option value="<?php echo $userdata['cmtsdisabled'];?>"/><?php echo $userdata['cmtsdisabled'];?></option>
+<option value="hidden">Hidden</option>
+<option value="show">Show</option>
 </select><p>
+    <select name="shloc">
+    <option value="<?php echo $userdata['shloc'];?>"/><?php echo $userdata['shloc'];?></option>
+    <option value="hidden">Hidden</option>
+    <option value="show">Show</option>
+    </select>
+  <select name="sheml">
+  <option value="<?php echo $userdata['sheml'];?>"/><?php echo $userdata['sheml'];?></option>
+  <option value="hidden">Hidden</option>
+  <option value="show">Show</option>
+  </select>
+  <select name="shname">
+  <option value="<?php echo $userdata['shname'];?>"/><?php echo $userdata['shname'];?></option>
+  <option value="hidden">Hidden</option>
+  <option value="show">Show</option>
+  </select>
+  <select name="shhobs">
+  <option value="<?php echo $userdata['shhobs'];?>"/><?php echo $userdata['shhobs'];?></option>
+  <option value="hidden">Hidden</option>
+  <option value="show">Show</option>
+  </select
+  <select name="shabout">
+  <option value="<?php echo $userdata$row['shabout'];?>"/><?php echo $userdata$row['shabout'];?></option>
+  <option value="hidden">Hidden</option>
+  <option value="show">Show</option>
+  </select>
+  <select name="deact">
+  <option value="<?php echo $userdata$row['deact'];?>"/><?php echo $userdata$row['deact'];?></option>
+  <option value="deactivate">Deactivate</option>
+  <option value="activate">Activate</option>
+  </select>
 <?php if (!$userdata['oauth_provider']) { ?>
 Password:(leave blank if no change)<br />
 <input type="password" name="password" /><p>
