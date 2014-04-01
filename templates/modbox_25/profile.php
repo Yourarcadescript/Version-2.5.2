@@ -15,16 +15,16 @@ if (isset($_POST['settings'])){
 	$website = yasDB_clean($_POST['website']);
 	$name = yasDB_clean($_POST['name']);
 	$email = yasDB_clean($_POST['email']);
-  $location = yasDB_clean($_POST['location']);
+	$location = yasDB_clean($_POST['location']);
 	$job = yasDB_clean($_POST['job']);
 	$aboutme = yasDB_clean($_POST['aboutme']);
-  $hobbies = yasDB_clean($_POST['hobbies']);
-  $shhobs = yasDB_clean($_POST['shhobs']);
-  $shloc = yasDB_clean($_POST['shloc']);
-  $sheml = yasDB_clean($_POST['sheml']);
-  $shname = yasDB_clean($_POST['shname']);
-  $deact = yasDB_clean($_POST['deact']);
-  $cmtsdisabled = yasDB_clean($_POST['cmtsdisabled']);
+	$hobbies = yasDB_clean($_POST['hobbies']);
+	$shhobs = yasDB_clean($_POST['shhobs']);
+	$shloc = yasDB_clean($_POST['shloc']);
+	$sheml = yasDB_clean($_POST['sheml']);
+	$shname = yasDB_clean($_POST['shname']);
+	$deact = yasDB_clean($_POST['deact']);
+	$cmtsdisabled = yasDB_clean($_POST['cmtsdisabled']);
 	yasDB_update("UPDATE user SET website = '$website', name = '$name', email = '$email', location='$location', job='$job', aboutme='$aboutme', hobbies='$hobbies', shhobs='$shhobs', cmtsdisabled='$cmtsdisabled', shloc='$shloc', sheml='$sheml', shname='$shname', deact='$deact' WHERE username = '$user'");
 	if(!empty($_POST['password'])) {
 	$password = md5(yasDB_clean($_POST['password']));
