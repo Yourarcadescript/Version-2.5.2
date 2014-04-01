@@ -22,7 +22,8 @@ echo '<span style="color:red;">Comment added!</span>';
 }
 $id = yasDB_clean($_GET['id']);
 $query = yasDB_select("SELECT * FROM `user` WHERE id = '$id'");
-$row = $query->fetch_array(MYSQLI_ASSOC);$query->close();
+$row = $query->fetch_array(MYSQLI_ASSOC);
+$query->close();
 $joined = date('m/d/y',$row['date']);
 $points = $row['plays']*50;
 if ( $row['website'] != '') {
@@ -30,86 +31,86 @@ $website = '<a href="'.$row['website'].'" target="_blank">Website</a><br>';
 } else {
 $website = 'No Website';
 }
-if ( $row['location'] != '') {
-$location = ''. $row['location'].'<br>';
-} else {
-$location = 'Place where you stay.<br>';
-}
-if ( $row['job'] != '') {
-$occupation = ''. $row['job'].'<br>';
-} else {
-$occupation = 'Work place.<br>';
-}
 if ( $row['useavatar'] == '1' ) {
 $avatarimage = $setting['siteurl'] . 'avatars/' . $row['avatarfile'];
 }else {
 $avatarimage = $setting['siteurl'] . 'avatars/useruploads/noavatar.JPG';
 }
-if ($setting['seo'] == 'yes') {
-$membersprofile = $setting['siteurl'].'profile.html';
+if ($row['deact'] == 'deactivate') {
+if ($setting['seo']=='yes') {
+$profile = $setting['siteurl'].'profile.html';
 } else {
-$membersprofile = $setting['siteurl'].'index.php?act=profile';
+$profile = $setting['siteurl'].'index.php?act=profile';
 }
+echo '
+<div class="containbox2">
+<table class="tg" width="720px">
+  <tr>
+    <th class="tg-s6z2" colspan="4">Activate Account</th>
+  </tr>
+  <tr>
+    <td class="tg-vn4c">
+    <center>
+    This account is deactivated.<br />
+    Please click on link to activate your account.<br />
+    <a href="'.$profile.'">Edit Profile</a></center><br /></td>
+  </tr> 
+  </table>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+';
+} else {
 ?>
 <div class="containbox2">
-<div class="profile">
-<ul>
-<li class="title">Username: <?php echo $row['username'];?></li>
-<li class="profilepic"><img src="<?php echo $avatarimage;?>" width="130" height="100">
-<br/><a href="<?php echo $membersprofile;?>">Edit Profile</a>
-<hr><?php echo $website;?><hr>
-</li>
-</ul>
-<ul>
-<li class="title2">About Me</li>
-<li class="aboutme"><?php echo $row['aboutme'];?></li>
-</ul>
-</div>
-<div class="clear"></div>
-<div class="profile2">
-<ul>
-<li class="info2">Location:</li>
-<li class="info2">Joined:</li>
-<li class="info2">Plays:</li>
-<li class="info2">Points:</li>
-<li class="info2">Occupation:</li>
-</ul>
-<ul>
-<li class="info"><?php echo $location;?></li>
-<li class="info"><?php echo $joined;?></li>
-<li class="info"><?php echo $row['plays'];?></li>
-<li class="info"><?php echo $points;?></li>
-<li class="info"><?php echo $occupation;?></li>
-</ul>
-<ul>
-<li class="info2">AIM:</li>
-<li class="info2">MSN:</li>
-<li class="info2">Skype:</li>
-<li class="info2">Yahoo:</li>
-</ul>
-<ul>
-<li class="info"><?php echo $row['aim'];?></li>
-<li class="info"><?php echo $row['msn'];?></li>
-<li class="info"><?php echo $row['skype'];?></li>
-<li class="info"><?php echo $row['yahoo'];?></li>
-</ul>
-</div>
+<table class="tg" width="720px">
+  <tr>
+    <th class="tg-s6z2" colspan="4">Username : <?php echo $row['username'];?></th>
+  </tr>
+  <tr>
+    <td class="tg-vn4c" width="140px"><img src="<?php echo $avatarimage;?>" width="130" height="100">
+    <br/><?php if ($row['shname'] == 'hidden') { echo 'Username:<hr>'.$row['username'].'<hr>'; } else { echo 'Real Name:<hr>'.$row['name'].'<hr>'; } ?>
+    <?php echo $website;?><hr></td>
+  </tr>
+  <tr>
+    <th class="tg-s6z2" colspan="4">About Me:</th>
+  </tr>
+  <tr>
+    <td class="tg-Oord" colspan="1">Location:</td>
+    <td class="tg-Oord" colspan="1"><?php if ($row['shloc'] == 'hidden') { echo ''; } else { echo ''.$row['location'].''; } ?></td>
+    <td class="tg-Oord" colspan="1">Joined:</td>
+    <td class="tg-Oord" colspan="1"><?php echo $joined;?></td>
+  </tr>
+  <tr>
+    <td class="tg-vn4c" colspan="1">Game Plays:</td>
+    <td class="tg-vn4c" colspan="1"><?php echo $row['plays'];?></td>
+    <td class="tg-vn4c" colspan="1">Points:</td>
+    <td class="tg-vn4c" colspan="1"><?php echo $points;?></td>
+  </tr>
+  <tr>
+    <td class="tg-Oord" colspan="1">Email:</td>
+    <td class="tg-Oord" colspan="3"><?php if ($row['sheml'] == 'hidden') { echo ''; } else { echo ''.$row['email'].''; }?></td>
+  </tr>
+  <tr>
+    <td class="tg-vn4c" width="80px">Interests:</td>
+    <td class="tg-vn4c" colspan="3"><?php if ($row['shabout'] == 'hidden') { echo ''; } else { echo ''.$row['aboutme'].''; } ?></td>
+  </tr>
+  <tr>
+    <td class="tg-Oord" width="80px">Hobbies:</td>
+    <td class="tg-Oord" colspan="3"><?php if ($row['shhobs'] == 'hidden') { echo ''; } else { echo ''.$row['hobbies'].''; } ?></td>
+  </tr>
+</table>
 </div>
 <div class="clear"></div>
 </div>
 <?php
-if ($row['cmtsdisabled'] == 'yes') {
-?>
-<div class="container_box1">
-<div id="headergames2">Comments Disabled:</div>
-<div class="container_box3">You can not post a comment</div>
-<div class="clear"></div>
-</div>
-<?php
+if ($row['cmtsdisabled'] == 'hidden') {
+echo '';
 } else {
 ?>
 <div class="container_box1">
 <div id="headergames2">Member's Comments:</div>
+<div class="container_box3">
 <div id="messages">
 <?php
 $query = yasDB_select("SELECT count(id) AS count FROM memberscomments WHERE userid = $id");
@@ -117,7 +118,7 @@ $result = $query->fetch_array(MYSQLI_ASSOC);
 $total = $result['count'];
 $prefix = $setting['siteurl'] . 'templates/' . $setting['theme'] . '/skins/' . $setting['skin'] . '/images/smileys/';
 if($query->num_rows == 0) {
-echo '<div class="container_box5">This member has no comments, be the first to add one!</div>';
+echo '<div class="container_box3">This member has no comments, be the first to add one!</div>';
 } else {
 $query = yasDB_select("SELECT memberscomments.name,memberscomments.comment,memberscomments.userid,user.id,user.username,user.avatarfile,user.useavatar FROM memberscomments LEFT JOIN user ON memberscomments.name = user.username WHERE userid = $id ORDER BY 'memberscomments.id' ASC LIMIT 5");
 $i = 0;
@@ -149,11 +150,11 @@ if ($setting['seo'] == 'yes') {
 $memberlink = $setting['siteurl'].'showmember/'.$row['id'].'.html';
 } else {
 $memberlink = $setting['siteurl'] . 'index.php?act=showmember&id='.$row['id'] ;
-}
+} 
 if($i % 2 == 0)	{
-echo '<div class="cm-box"><a href="'.$memberlink.'"><img src="'.$avatarimage.'" align="center" class="c-img" title="'.$username.'"></a><div class="cmmnts"><p class="usr-cmnt">' . $text . '</p></div></div><div class="clear"></div>';
+echo '<div class="cm-box"><a href="'.$memberlink.'"><img src="'.$avatarimage.'" align="center" class="avatar-img" title="'.$username.'"></a><div class="cmmnts"><p class="usr-cmnt">' . $text . '</p></div></div><div class="clear"></div>';
 } else {
-echo '<div class="cm-box"><div class="scnd-cmnt"><p class="usr-cmnt-2">' . $text . '</p></div><a href="'.$memberlink.'"><img src="'.$avatarimage.'" align="center" class="c-img" title="'.$username.'"></a></div></div><div class="clear"></div>';
+echo '<div class="cm-box"><div class="scnd-cmnt"><p class="usr-cmnt-2">'.$text.'</p></div><a href="'.$memberlink.'"><img src="'.$avatarimage.'" align="center" class="avatar-img" title="'.$username.'"></a></div><div class="clear"></div>';
 }
 $i++;
     }
@@ -202,8 +203,8 @@ $query->close();
 <input name="addcomment" type="submit" value="Add Comment" style="border: 1px solid #000; margin-top: 2px;" /><br/><br/>
 </form></center></div></div>
 <div class="clear"></div>
-<?php
-    }
+<?php }
+  }
 }
 ?>
 </div>
