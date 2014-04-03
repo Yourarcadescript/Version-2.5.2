@@ -34,6 +34,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	}
 	else {
 		$gender = '';
+	}
 	
 	if (isset($_SESSION['userid'])) {
 		yasDB_update("UPDATE `user` SET website = '$website', name = '$name', email = '$email', location='$location', job='$job', aboutme='$aboutme', hobbies='$hobbies', shhobs='$shhobs', cmtsdisabled='$cmtsdisabled', shloc='$shloc', sheml='$sheml', shname='$shname', shabout='$shabout', deact='$deact', birthday='$birthday', gender='$gender' WHERE id = '$userid'");
