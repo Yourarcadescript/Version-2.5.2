@@ -27,9 +27,7 @@
 			case 'managevasco':	
 			case 'managekong':
 			case 'managefgdfeed':
-			case 'manageplaytomic':
 			case 'managefogfeed':
-			case 'managemochi':
 				?><link rel="stylesheet" type="text/css" media="screen" href="<?php echo $setting['siteurl'];?>includes/fancybox/jquery.fancybox-1.3.4.css" />
 				<script type="text/javascript" src="<?php echo $setting['siteurl'];?>includes/notice/jquery_notification.js"></script>
 				<script>!window.jQuery && document.write('<script src="<?php echo $setting['siteurl'];?>includes/fancybox/jquery-1.4.3.min.js"><\/script>');</script>
