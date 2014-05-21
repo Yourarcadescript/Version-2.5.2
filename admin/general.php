@@ -91,19 +91,10 @@
 <div class="boxheader"><?php $translate->__('Game Feeds');?></div>
 <div class="middlewrapperbox" style="height:200px;">
 <div class="imagebox">
-<a href="index.php?act=mochiid" title="Update Mochi ID"><img src="img/cpanel/mochiupdate.png" alt="Update Mochi ID" height="42" width="42" /><br /><?php $translate->__('Update Mochi ID');?></a>
-</div>
-<div class="imagebox">
-<a href="index.php?act=managemochi" title="Install Mochi Games"><img src="img/cpanel/managemochi.png" alt="Install Mochi Games" height="42" width="42" /><br /><?php $translate->__('Mochi Games');?></a>
-</div>
-<div class="imagebox">
 <a href="index.php?act=managefgdfeed" title="Install FGD Games"><img src="img/cpanel/fgd.png" alt="Install FGD Games" height="42" width="42" /><br /><?php $translate->__('FGD Games');?></a>
 </div>
 <div class="imagebox">
 <a href="index.php?act=managefogfeed" title="Install FOG Games"><img src="img/cpanel/fog.png" alt="Install FOG Games" height="42" width="42" /><br /><?php $translate->__('FOG Games');?></a>
-</div>
-<div class="imagebox">
-<a href="index.php?act=manageplaytomic" title="Install Kongregate Games"><img src="img/cpanel/playtomic.png" alt="Install Playtomic Games" height="42" width="42" /><br /><?php $translate->__('Playtomic Games');?></a>
 </div>
 <div class="imagebox">
 <a href="index.php?act=managekong" title="Install Kongregate Games"><img src="img/cpanel/kong2.png" alt="Install Kongregate Games" height="42" width="42" /><br /><?php $translate->__('Kongregate Games');?></a>
