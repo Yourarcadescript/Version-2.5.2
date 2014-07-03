@@ -32,6 +32,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 			$plays = 0;
 			$points = 0;
 			
+			if (strlen($_POST['username2'])<2 || strlen($_POST['username2'])>20) {
+					echo "<h3>Username must be between 2 and 20 characters!</h3>";
+					}else{
+			
 			$stmt = yasDB_select("SELECT `id` FROM `user` WHERE `username` LIKE '$username'");
 			$stmt2 = yasDB_select("SELECT `id` FROM `user` WHERE `email` LIKE '$email'");
 			if($stmt->num_rows == 0 && $stmt2->num_rows == 0){
@@ -46,6 +50,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 				$stmt->close();
 				echo "<h3>Sorry, username or email exists. Please try again.</h3>";
 			} 
+			}
 		} else {
 			echo '<h3><span style="color:red;">The security question was answered incorrectly. Please try again.</span></h3>';
 		}
