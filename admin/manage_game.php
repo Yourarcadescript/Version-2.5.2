@@ -253,7 +253,7 @@ if(!empty($_GET['edit'])) {
 		echo '<a href="index.php?act=managegames&edit=' . intval($_POST['id']) . '">Click here to go back</a></center>';
 	} else {
 		$pid = intval($_POST['id']);
-		yasDB_update("UPDATE games SET title = '". yasDB_clean($_POST['title'])."', description = '".yasDB_clean($_POST['description'])."', instructions = '".yasDB_clean($_POST['instructions'])."', code = '".yasDB_clean($_POST['gamecode'])."',keywords = '".yasDB_clean($_POST['keywords'])."', category = ".intval($_POST['category']).", height = ".intval($_POST['gameheight']).", width = ".intval($_POST['gamewidth']).", type = '".yasDB_clean($_POST['type'])."', thumbnail = '".yasDB_clean($_POST['thumbnail'])."', file = '".yasDB_clean($_POST['file'])."', active=".intval($_POST['active']).", review='".yasDB_clean($_POST['review'])."' where id = $pid",false);
+		yasDB_update("UPDATE games SET title = '". yasDB_clean($_POST['title'])."', description = '".yasDB_clean($_POST['description'])."', instructions = '".yasDB_clean($_POST['instructions'])."', code = '".trim($_POST['gamecode'])."',keywords = '".yasDB_clean($_POST['keywords'])."', category = ".intval($_POST['category']).", height = ".intval($_POST['gameheight']).", width = ".intval($_POST['gamewidth']).", type = '".yasDB_clean($_POST['type'])."', thumbnail = '".yasDB_clean($_POST['thumbnail'])."', file = '".yasDB_clean($_POST['file'])."', active=".intval($_POST['active']).", review='".yasDB_clean($_POST['review'])."' where id = $pid",false);
 		$result = yasDB_select("SELECT gameid FROM featuredgames WHERE gameid = $pid");
 		if ($_POST['featured'] == 'yes') {
 			if ($result->num_rows == 0) {
