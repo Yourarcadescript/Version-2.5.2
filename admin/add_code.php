@@ -32,7 +32,7 @@ if(isset($_POST['add'])) {
 	$title = yasDB_clean($_POST['title']);
 	$desc = yasDB_clean($_POST['description']);
 	$thumb = yasDB_clean($_POST['thumbnail']);
-	$code = yasDB_clean($_POST['code']);
+	$code = trim($_POST['code']);
 	yasDB_insert("INSERT INTO games (title, description, category, thumbnail, code, height, width, type) values ('$title', '$desc', '{$_POST['category']}', '$thumb', '$code', '', '', 'CustomCode')",false);
 	echo '<center>';
 	$translate->__('Embed Code successfully added!');
