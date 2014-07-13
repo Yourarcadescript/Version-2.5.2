@@ -76,12 +76,12 @@ if (isset($_POST['add'])) {
 			move_uploaded_file($_FILES["file"]["tmp_name"], $setting['sitepath']."/swf/" . $num . preg_replace('/[^a-zA-Z0-9.-_]/', '', $_FILES["file"]["name"]));
 			$img = yasDB_clean("img/" .  $num . preg_replace('/[^a-zA-Z0-9.-_]/', '', $_FILES["thumbnail"]["name"]));
 			$file = yasDB_clean("swf/" .  $num . preg_replace('/[^a-zA-Z0-9.-_]/', '', $_FILES["file"]["name"]));
-			$desc = yasDB_clean($_POST['description']);
+			$desc = yasDB_admin($_POST['description']);
 			$title = yasDB_clean($_POST['title']);
 			$height = intval($_POST['height']);
 			$width = intval($_POST['width']);
-			$instr = yasDB_clean($_POST['instructions']);
-			$keywords = yasDB_clean($_POST['keywords']);
+			$instr = yasDB_admin($_POST['instructions']);
+			$keywords = yasDB_admin($_POST['keywords']);
 			if ($_POST['height'] OR $_POST['width'] <= 0 ) {
 				list($width, $height, $type, $attributes) = getimagesize($setting['sitepath'].'/'.$file);
 			}	
