@@ -311,6 +311,25 @@ function yasDB_clean($dirty, $encode_ent = false) {
     }
     return $clean;
 }
+function yasDB_admin($dirty, $encode_ent = false) {
+    global $mysqli;
+    $dirty = @trim($dirty);
+    if ($encode_ent) {
+        $dirty = htmlentities($dirty);
+    }
+    if(version_compare(phpversion(),'4.3.0') >= 0) {
+        if(get_magic_quotes_gpc()) {
+            $dirty = stripslashes($dirty);
+        }
+        $clean = $mysqli->real_escape_string($dirty);
+    }
+    else {
+        if(!get_magic_quotes_gpc()) {
+            $clean = addslashes($dirty);
+        }
+    }
+    return $clean;
+} 
 ?>';
 	   fwrite($h,$data);
 	   fclose($h);
