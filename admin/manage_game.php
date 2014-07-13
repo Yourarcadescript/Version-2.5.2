@@ -253,7 +253,8 @@ if(!empty($_GET['edit'])) {
 		echo '<a href="index.php?act=managegames&edit=' . intval($_POST['id']) . '">Click here to go back</a></center>';
 	} else {
 		$pid = intval($_POST['id']);
-		yasDB_update("UPDATE games SET title = '". yasDB_clean($_POST['title'])."', description = '".yasDB_clean($_POST['description'])."', instructions = '".yasDB_clean($_POST['instructions'])."', code = '".trim($_POST['gamecode'])."',keywords = '".yasDB_clean($_POST['keywords'])."', category = ".intval($_POST['category']).", height = ".intval($_POST['gameheight']).", width = ".intval($_POST['gamewidth']).", type = '".yasDB_clean($_POST['type'])."', thumbnail = '".yasDB_clean($_POST['thumbnail'])."', file = '".yasDB_clean($_POST['file'])."', active=".intval($_POST['active']).", review='".yasDB_clean($_POST['review'])."' where id = $pid",false);
+		yasDB_update("UPDATE games SET title = '". yasDB_admin($_POST['title'])."', description = '".yasDB_admin
+		($_POST['description'])."', instructions = '".yasDB_admin($_POST['instructions'])."', code = '".trim($_POST['gamecode'])."',keywords = '".yasDB_admin($_POST['keywords'])."', category = ".intval($_POST['category']).", height = ".intval($_POST['gameheight']).", width = ".intval($_POST['gamewidth']).", type = '".yasDB_clean($_POST['type'])."', thumbnail = '".yasDB_clean($_POST['thumbnail'])."', file = '".yasDB_admin($_POST['file'])."', active=".intval($_POST['active']).", review='".yasDB_admin($_POST['review'])."' where id = $pid",false);
 		$result = yasDB_select("SELECT gameid FROM featuredgames WHERE gameid = $pid");
 		if ($_POST['featured'] == 'yes') {
 			if ($result->num_rows == 0) {
@@ -366,10 +367,10 @@ if(!empty($_GET['edit'])) {
 	   $pageno = 1;
 	} 
 	$category = isset($_GET['category'])?$_GET['category']:'all';
-	$title = isset($_GET['title'])?yasDB_clean($_GET['title']):'';
-	$description = isset($_GET['description'])?yasDB_clean($_GET['description']):'';
-	$keywords = isset($_GET['keywords'])?yasDB_clean($_GET['keywords']):'';
-	$featured = isset($_GET['featured'])?yasDB_clean($_GET['featured']):'';
+	$title = isset($_GET['title'])?yasDB_admin($_GET['title']):'';
+	$description = isset($_GET['description'])?yasDB_admin($_GET['description']):'';
+	$keywords = isset($_GET['keywords'])?yasDB_admin($_GET['keywords']):'';
+	$featured = isset($_GET['featured'])?yasDB_admin($_GET['featured']):'';
 	if (isset($_GET['filter'])) {
 		if(isset($_GET['exact'])) {
 			$sql = "SELECT * FROM `games` WHERE `id` = ".intval($_GET['exact']);
