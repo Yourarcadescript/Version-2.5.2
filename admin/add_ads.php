@@ -10,7 +10,7 @@
 </div>
 <?php
 if (isset($_POST['add_ads'])) {
-	$name = yasDB_clean($_POST['name']);
+	$name = yasDB_admin($_POST['name']);
 	$code = stripslashes($_POST['code']);
 	yasDB_insert("INSERT INTO `ads` ( `id` , `name` , `code`) VALUES ('', '".$name."', '".$code."')",false);
 	echo '<center>';
